@@ -197,9 +197,9 @@
 			"Soldier"
 			{
 				"fov"			"25"
-				"angles_x"		"-10"
+				"angles_x"		"-5"				//default: -10
 				"angles_x_minmode"	"-3"
-				"angles_y"		"170"
+				"angles_y"		"160"				//default: 170
 				"angles_z"		"0"
 				"origin_x"		"145"
 				"origin_y"		"-5"

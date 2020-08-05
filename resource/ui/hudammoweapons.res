@@ -6,7 +6,7 @@
 		"fieldName"		"HudWeaponAmmoBG"
 		"xpos"			"4"
 		"xpos_minmode"	"28"
-		"ypos"			"0"
+		"ypos"			"27"					// default: 0
 		"ypos_minmode"	"7"
 		"zpos"			"1"
 		"wide"			"90"
@@ -26,7 +26,7 @@
 		"fieldName"		"HudWeaponLowAmmoImage"
 		"xpos"			"4"
 		"xpos_minmode"	"28"
-		"ypos"			"0"
+		"ypos"			"27"					// default: 0
 		"ypos_minmode"	"7"
 		"zpos"			"0"
 		"wide"			"90"
@@ -48,7 +48,7 @@
 		"fgcolor"		"TanLight"
 		"xpos"			"4"
 		"xpos_minmode"	"8"
-		"ypos"			"0"
+		"ypos"			"27"					//default: 0
 		"ypos_minmode"	"2"
 		"zpos"			"5"
 		"wide"			"55"
@@ -70,7 +70,7 @@
 		"xpos"			"5"
 		"xpos_minmode"	"9"
 		"xpos_hidef"	"2"
-		"ypos"			"1"
+		"ypos"			"28"					//default: 0
 		"ypos_minmode"	"2"
 		"ypos_hidef"	"2"
 		"ypos_lodef"	"2"
@@ -95,7 +95,7 @@
 		"fgcolor"		"TanLight"
 		"xpos"			"59"
 		"xpos_minmode"	"65"
-		"ypos"			"8"
+		"ypos"			"35"					//default: 0
 		"ypos_lodef"	"10"
 		"zpos"			"7"
 		"wide"			"40"
@@ -116,7 +116,7 @@
 		"fgcolor"		"TransparentBlack"
 		"xpos"			"60"
 		"xpos_minmode"	"66"
-		"ypos"			"9"
+		"ypos"			"36"					//default: 0
 		"ypos_lodef"	"11"
 		"zpos"			"7"
 		"wide"			"40"

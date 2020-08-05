@@ -16,14 +16,14 @@
 		"fieldName" "HudWeaponAmmo"
 		"visible" "1"
 		"enabled" "1"
-		"xpos"	"r95"	[$WIN32]
+		"xpos"	"r250"	[$WIN32]		//default: r95
 		"xpos_minmode"	"r85"	[$WIN32]
-		"ypos"	"r55"	[$WIN32]
+		"ypos"	"r120"	[$WIN32]		//default: r55
 		"ypos_minmode"	"r36"	[$WIN32]
 		"xpos"	"r131"	[$X360]
 		"ypos"	"r77"	[$X360]
-		"wide"	"94"
-		"tall"	"45"
+		"wide"	"250"				//default: 94
+		"tall"	"120"				//default: 45
 	}
 	
 	HudObjectiveStatus

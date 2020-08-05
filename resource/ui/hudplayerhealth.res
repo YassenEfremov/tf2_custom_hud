@@ -87,7 +87,7 @@
 		"labelText"		"%Health%"
 		"textAlignment"	"center"	
 		"font"			"HudFontMediumBold"
-		"fgcolor"		"StoreDarkTan"
+		"fgcolor"		"HUDSpectator"
 	}
 	"PlayerStatusHealthValueShadow"			// added, not in the original file
 	{
