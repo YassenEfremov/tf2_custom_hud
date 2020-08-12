@@ -4,13 +4,13 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"HudWeaponAmmoBG"
-		"xpos"			"4"
+		"xpos"			"324"				// default: 4
 		"xpos_minmode"	"28"
-		"ypos"			"27"					// default: 0
+		"ypos"			"200"				// default: 0
 		"ypos_minmode"	"7"
 		"zpos"			"1"
-		"wide"			"90"
-		"tall"			"45"
+		"wide"			"90"				// default: 90	
+		"tall"			"45"				// default: 45
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			"../hud/ammo_blue_bg"
@@ -24,9 +24,9 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"HudWeaponLowAmmoImage"
-		"xpos"			"4"
+		"xpos"			"324"				// default: 4
 		"xpos_minmode"	"28"
-		"ypos"			"27"					// default: 0
+		"ypos"			"200"				// default: 0
 		"ypos_minmode"	"7"
 		"zpos"			"0"
 		"wide"			"90"
@@ -44,15 +44,15 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"AmmoInClip"
-		"font"			"HudFontGiantBold"
-		"fgcolor"		"TanLight"
-		"xpos"			"4"
+		"font"			"DefaultLarge"		// default: HudFontGiantBold
+		"fgcolor"		"HudOffWhite"
+		"xpos"			"0"					// default: 4
 		"xpos_minmode"	"8"
-		"ypos"			"27"					//default: 0
+		"ypos"			"15"					// default: 0
 		"ypos_minmode"	"2"
 		"zpos"			"5"
-		"wide"			"55"
-		"tall"			"40"
+		"wide"			"13"				// default: 55
+		"tall"			"21"				// default: 40
 		"tall_minmode"	"38"
 		"tall_lodef"	"45"
 		"visible"		"0"
@@ -65,18 +65,18 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"AmmoInClipShadow"
-		"font"			"HudFontGiantBold"
-		"fgcolor"		"Black"
-		"xpos"			"5"
+		"font"			"DefaultLarge"
+		"fgcolor"		"TransparentBlack"			
+		"xpos"			"1"					// default: 5
 		"xpos_minmode"	"9"
 		"xpos_hidef"	"2"
-		"ypos"			"28"					//default: 0
+		"ypos"			"16"					// default: 1
 		"ypos_minmode"	"2"
 		"ypos_hidef"	"2"
 		"ypos_lodef"	"2"
 		"zpos"			"5"
-		"wide"			"55"
-		"tall"			"40"
+		"wide"			"13"				// default: 55
+		"tall"			"21"				// default: 40
 		"tall_minmode"	"39"
 		"tall_lodef"	"45"
 		"visible"		"0"
@@ -89,17 +89,17 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"AmmoInReserve"
-		"font"			"HudFontMediumSmall"
+		"font"			"HudFontGiantBold"	// default: HudFontMediumSmall
 		"font_lodef"	"HudFontMedium"
 		"font_minmode"	"HudFontSmall"
 		"fgcolor"		"TanLight"
-		"xpos"			"59"
+		"xpos"			"341"				// default: 59
 		"xpos_minmode"	"65"
-		"ypos"			"35"					//default: 0
+		"ypos"			"200"				// default: 8
 		"ypos_lodef"	"10"
 		"zpos"			"7"
-		"wide"			"40"
-		"tall"			"27"
+		"wide"			"55"				// default: 40
+		"tall"			"40"				// default: 27
 		"tall_lodef"	"30"
 		"visible"		"0"
 		"enabled"		"1"
@@ -110,17 +110,17 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"AmmoInReserveShadow"
-		"font"			"HudFontMediumSmall"
+		"font"			"HudFontGiantBold"	// default: HudFontMediumSmall
 		"font_lodef"	"HudFontMedium"
 		"font_minmode"	"HudFontSmall"
 		"fgcolor"		"TransparentBlack"
-		"xpos"			"60"
+		"xpos"			"343"				// default: 60
 		"xpos_minmode"	"66"
-		"ypos"			"36"					//default: 0
+		"ypos"			"202"				// default: 9
 		"ypos_lodef"	"11"
 		"zpos"			"7"
-		"wide"			"40"
-		"tall"			"27"
+		"wide"			"55"				// default: 40
+		"tall"			"40"				// default: 27
 		"tall_lodef"	"30"
 		"visible"		"0"
 		"enabled"		"1"

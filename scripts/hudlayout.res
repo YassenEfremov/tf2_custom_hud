@@ -16,14 +16,14 @@
 		"fieldName" "HudWeaponAmmo"
 		"visible" "1"
 		"enabled" "1"
-		"xpos"	"r250"	[$WIN32]		//default: r95
+		"xpos"	"r394"	[$WIN32]		//default: r95
 		"xpos_minmode"	"r85"	[$WIN32]
-		"ypos"	"r120"	[$WIN32]		//default: r55
+		"ypos"	"r255"	[$WIN32]		//default: r55
 		"ypos_minmode"	"r36"	[$WIN32]
 		"xpos"	"r131"	[$X360]
 		"ypos"	"r77"	[$X360]
-		"wide"	"250"				//default: 94
-		"tall"	"120"				//default: 45
+		"wide"	"394"					//default: 94
+		"tall"	"245"					//default: 45
 	}
 	
 	HudObjectiveStatus
@@ -214,7 +214,7 @@
 	CHealthAccountPanel
 	{
 		"fieldName"				"CHealthAccountPanel"
-		"xpos"					"182"			// default: 76
+		"xpos"					"132"			// default: 76
 		"xpos_minmode"			"61"
 		"ypos"					"r165"			// default: r152
 		"ypos_minmode"			"r134"
