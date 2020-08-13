@@ -3,10 +3,10 @@
 	HudItemEffectMeter
 	{
 		"fieldName"		"HudItemEffectMeter"
-		"visible"		"1"
+		"visible"		"1"						
 		"enabled"		"1"
-		"xpos"			"r200"	[$WIN32]		//default: 94
-		"ypos"			"r52"	[$WIN32]		//default: r52
+		"xpos"			"80"	[$WIN32]		// default: 94
+		"ypos"			"r52"	[$WIN32]		// default: r52
 		"xpos_minmode"	"68"	[$WIN32]
 		"ypos_minmode"	"r40"	[$WIN32]
 		"wide"			"100"
@@ -19,19 +19,19 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"ItemEffectMeterBG"
-		"xpos"			"12"
-		"ypos"			"0"
+		"xpos"			"42"					// default: 12
+		"ypos"			"10"						// default: 0
 		"zpos"			"0"
-		"wide"			"76"
-		"tall"			"44"
-		"visible"		"0"
+		"wide"			"24"					// default: 76
+		"tall"			"24"					// default: 44
+		"visible"		"1"
 		"visible_minmode"	"0"
-		"enabled"		"0"
-		"image"			"../hud/misc_ammo_area_blue"
+		"enabled"		"1"
+		"image"			"../hud/misc_ammo_area_blue"			// default: ../hud/misc_ammo_area_blue
 		"scaleImage"	"1"	
-		"teambg_2"		"../hud/misc_ammo_area_red"
+		"teambg_2"		"../hud/scoreboard_streak"				// default: ../hud/misc_ammo_area_red
 		"teambg_2_lodef"	"../hud/misc_ammo_area_red_lodef"
-		"teambg_3"		"../hud/misc_ammo_area_blue"
+		"teambg_3"		"../hud/scoreboard_streak"			// default: ../hud/misc_ammo_area_blue
 		"teambg_3_lodef"	"../hud/misc_ammo_area_blue_lodef"				
 	}
 	
@@ -46,8 +46,8 @@
 		"tall"					"15"
 		"autoResize"			"1"
 		"pinCorner"				"2"
-		"visible"				"1"
-		"enabled"				"1"
+		"visible"				"0"
+		"enabled"				"0"
 		"tabPosition"			"0"
 		"labelText"				"#TF_KillStreak"
 		"textAlignment"			"center"
@@ -82,9 +82,9 @@
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"ItemEffectMeterCount"
-		"xpos"					"25"
+		"xpos"					"15"			// default: 25
 		"ypos_minmode"			"18"
-		"ypos"					"10"
+		"ypos"					"10"			// default: 10
 		"zpos"					"2"
 		"wide"					"40"
 		"tall"					"20"	
@@ -98,5 +98,29 @@
 		"brighttext"			"0"
 		"font"					"HudFontMedium"
 		"font_minmode"			"HudFontSmall"
+		"fgcolor"				"TanLight"		// added, not in the original file
+	}
+	
+	"ItemEffectMeterCountShadow"				// added, not in the original file
+	{
+		"ControlName"			"CExLabel"
+		"fieldName"				"ItemEffectMeterCountShadow"
+		"xpos"					"15"			// default: 25
+		"ypos_minmode"			"18"
+		"ypos"					"11"			// default: 10
+		"zpos"					"2"
+		"wide"					"40"
+		"tall"					"20"	
+		"pinCorner"				"2"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"labelText"				"%progresscount%"
+		"textAlignment"			"north"
+		"dulltext"				"0"
+		"brighttext"			"0"
+		"font"					"HudFontMedium"
+		"font_minmode"			"HudFontSmall"
+		"fgcolor"				"TransparentBlack"
 	}
 }
