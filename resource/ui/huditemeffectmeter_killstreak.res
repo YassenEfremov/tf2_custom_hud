@@ -20,7 +20,7 @@
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"ItemEffectMeterBG"
 		"xpos"			"42"					// default: 12
-		"ypos"			"10"						// default: 0
+		"ypos"			"10"					// default: 0
 		"zpos"			"0"
 		"wide"			"24"					// default: 76
 		"tall"			"24"					// default: 44
@@ -82,7 +82,7 @@
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"ItemEffectMeterCount"
-		"xpos"					"15"			// default: 25
+		"xpos"					"12"			// default: 25
 		"ypos_minmode"			"18"
 		"ypos"					"10"			// default: 10
 		"zpos"					"2"
@@ -101,26 +101,27 @@
 		"fgcolor"				"TanLight"		// added, not in the original file
 	}
 	
-	"ItemEffectMeterCountShadow"				// added, not in the original file
+	"StreakBG"								// added, not in the original file
 	{
-		"ControlName"			"CExLabel"
-		"fieldName"				"ItemEffectMeterCountShadow"
-		"xpos"					"15"			// default: 25
-		"ypos_minmode"			"18"
-		"ypos"					"11"			// default: 10
-		"zpos"					"2"
-		"wide"					"40"
-		"tall"					"20"	
-		"pinCorner"				"2"
-		"visible"				"1"
-		"enabled"				"1"
-		"tabPosition"			"0"
-		"labelText"				"%progresscount%"
-		"textAlignment"			"north"
-		"dulltext"				"0"
-		"brighttext"			"0"
-		"font"					"HudFontMedium"
-		"font_minmode"			"HudFontSmall"
-		"fgcolor"				"TransparentBlack"
+		"ControlName"		"ImagePanel"
+		"fieldName"		"StreakBG"
+		"xpos"			"20"
+		"ypos"			"8"
+		"zpos"			"-2"
+		"wide"			"40"
+		"tall"			"25"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"	
+		"fillcolor"		"0 0 0 153"
+		"PaintBackgroundType"	"0"
+		"border" 		"TeamMenuBorder"
+		
+		if_mvm
+		{
+			"visible"		"1"
+		}
 	}
 }
