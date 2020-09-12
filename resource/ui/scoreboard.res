@@ -172,7 +172,7 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"border"		"TFThinLineBorder"
+		"border"		"TFFatLineBorder"			// default: TFThinLineBorder
 		
 		if_mvm
 		{
@@ -385,15 +385,15 @@
 		"ControlName"		"EditablePanel"
 		"fieldName"		"TimerBG"
 		"xpos"			"280"
-		"ypos"			"-3"
+		"ypos"			"0"							// default: -3
 		"zpos"			"-1"
 		"wide"			"80"
-		"tall"			"43"
+		"tall"			"38"						// default: 43
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"border"		"TFThinLineBorder"
+		"border"		"TFFatLineBorder"			// default: TFThinLineBorder
 		
 		if_mvm
 		{
@@ -428,7 +428,7 @@
 		"labelText"		"#Scoreboard_TimeLeftLabel"
 		"textAlignment"		"center"
 		"xpos"			"284"
-		"ypos"			"2"
+		"ypos"			"3"							// default: 2
 		"zpos"			"2"
 		"wide"			"72"
 		"tall"			"10"
@@ -450,7 +450,7 @@
 		"labelText"		"%servertime%"
 		"textAlignment"		"center"
 		"xpos"			"284"
-		"ypos"			"14"
+		"ypos"			"15"						// default: 14
 		"zpos"			"2"
 		"wide"			"72"
 		"tall"			"20"
@@ -606,11 +606,11 @@
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"ShadedBar"
-		"xpos"			"4"
+		"xpos"			"5"							// default: 4
 		"ypos"			"372"
 		"zpos"			"-2"
-		"wide"			"633"
-		"tall"			"72"
+		"wide"			"630"						// default: 633
+		"tall"			"71"						// default: 72
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"

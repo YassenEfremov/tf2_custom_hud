@@ -4,7 +4,7 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"HudWeaponAmmoBG"
-		"xpos"			"310"				// default: 4
+		"xpos"			"345"				// default: 4
 		"xpos_minmode"	"28"
 		"ypos"			"186"				// default: 0
 		"ypos_minmode"	"7"
@@ -13,7 +13,7 @@
 		"tall"			"65"				// default: 45
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"../hud/ammo_blue_bg"
+		"image"			"../hud/medic_charge_red_bg"	// default: ../hud/ammo_red_bg
 		"scaleImage"	"1"	
 		"teambg_2"		"../hud/medic_charge_red_bg"	// default: ../hud/ammo_red_bg
 		"teambg_2_lodef"	"../hud/ammo_red_bg_lodef"
@@ -24,7 +24,7 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"HudWeaponLowAmmoImage"
-		"xpos"			"310"				// default: 4
+		"xpos"			"345"				// default: 4
 		"xpos_minmode"	"28"
 		"ypos"			"186"				// default: 0
 		"ypos_minmode"	"7"
@@ -33,7 +33,7 @@
 		"tall"			"65"				// default: 45
 		"visible"		"0"
 		"enabled"		"1"
-		"image"			"../hud/medic_charge_red_bg"		// default: ../hud/ammo_red_bg
+		"image"			"../hud/medic_charge_red_bg"	// default: ../hud/ammo_red_bg
 		"scaleImage"	"1"	
 		"teambg_2"		"../hud/medic_charge_red_bg"	// default: ../hud/ammo_red_bg
 		"teambg_2_lodef"	"../hud/ammo_red_bg_lodef"
@@ -93,9 +93,9 @@
 		"font_lodef"	"HudFontMedium"
 		"font_minmode"	"HudFontSmall"
 		"fgcolor"		"TanLight"
-		"xpos"			"326"				// default: 59
+		"xpos"			"358"				// default: 59
 		"xpos_minmode"	"65"
-		"ypos"			"200"				// default: 8
+		"ypos"			"198"				// default: 8
 		"ypos_lodef"	"10"
 		"zpos"			"7"
 		"wide"			"70"				// default: 40
@@ -103,7 +103,7 @@
 		"tall_lodef"	"30"
 		"visible"		"0"
 		"enabled"		"1"
-		"textAlignment"	"south-west"		
+		"textAlignment"	"west"		
 		"labelText"		"%AmmoInReserve%"
 	}		
 	"AmmoInReserveShadow"
@@ -114,9 +114,9 @@
 		"font_lodef"	"HudFontMedium"
 		"font_minmode"	"HudFontSmall"
 		"fgcolor"		"TransparentBlack"
-		"xpos"			"328"				// default: 60
+		"xpos"			"360"				// default: 60
 		"xpos_minmode"	"66"
-		"ypos"			"202"				// default: 9
+		"ypos"			"200"				// default: 9
 		"ypos_lodef"	"11"
 		"zpos"			"7"
 		"wide"			"70"				// default: 40
@@ -124,7 +124,7 @@
 		"tall_lodef"	"30"
 		"visible"		"0"
 		"enabled"		"1"
-		"textAlignment"	"south-west"		
+		"textAlignment"	"west"		
 		"labelText"		"%AmmoInReserve%"
 	}									
 	"AmmoNoClip"
@@ -133,17 +133,17 @@
 		"fieldName"		"AmmoNoClip"
 		"font"			"HudFontGiantBold"
 		"fgcolor"		"TanLight"
-		"xpos"			"0"
-		"ypos"			"2"
+		"xpos"			"357"				// default: 0
+		"ypos"			"198"				// default: 2
 		"zpos"			"5"
-		"wide"			"84"
+		"wide"			"84"				// default: 84
 		"wide_lodef"	"83"
-		"tall"			"40"
+		"tall"			"40"				// default: 40
 		"tall_minmode"	"36"
 		"tall_lodef"	"45"
 		"visible"		"0"
 		"enabled"		"1"
-		"textAlignment"	"south-east"		
+		"textAlignment"	"west"		
 		"labelText"		"%Ammo%"
 		
 	}	
@@ -152,11 +152,11 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"AmmoNoClipShadow"
 		"font"			"HudFontGiantBold"
-		"fgcolor"		"Black"
-		"xpos"			"1"
+		"fgcolor"		"TransparentBlack"
+		"xpos"			"359"				// default: 1
 		"xpos_hidef"	"2"
 		"xpos_lodef"	"2"
-		"ypos"			"3"
+		"ypos"			"200"				// default: 3
 		"ypos_hidef"	"4"
 		"ypos_lodef"	"4"
 		"zpos"			"5"
@@ -167,7 +167,7 @@
 		"tall_lodef"	"45"
 		"visible"		"0"
 		"enabled"		"1"
-		"textAlignment"	"south-east"		
+		"textAlignment"	"west"		
 		"labelText"		"%Ammo%"
 		
 	}									

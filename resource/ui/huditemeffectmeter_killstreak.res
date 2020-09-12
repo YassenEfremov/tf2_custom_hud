@@ -5,8 +5,8 @@
 		"fieldName"		"HudItemEffectMeter"
 		"visible"		"1"						
 		"enabled"		"1"
-		"xpos"			"80"	[$WIN32]		// default: 94
-		"ypos"			"r52"	[$WIN32]		// default: r52
+		"xpos"			"94"	[$WIN32]
+		"ypos"			"r52"	[$WIN32]
 		"xpos_minmode"	"68"	[$WIN32]
 		"ypos_minmode"	"r40"	[$WIN32]
 		"wide"			"100"
@@ -14,25 +14,29 @@
 		"MeterFG"		"White"
 		"MeterBG"		"Gray"
 	}
-	
+
 	"ItemEffectMeterBG"
 	{
-		"ControlName"	"CTFImagePanel"
+		"ControlName"	"ImagePanel"
 		"fieldName"		"ItemEffectMeterBG"
-		"xpos"			"42"					// default: 12
-		"ypos"			"10"					// default: 0
-		"zpos"			"0"
-		"wide"			"24"					// default: 76
-		"tall"			"24"					// default: 44
+		"xpos"			"10"
+		"ypos"			"15"
+		"zpos"			"-2"
+		"wide"			"44"
+		"tall"			"25"
+		"autoResize"	"0"
+		"pinCorner"		"0"
 		"visible"		"1"
-		"visible_minmode"	"0"
 		"enabled"		"1"
-		"image"			"../hud/misc_ammo_area_blue"			// default: ../hud/misc_ammo_area_blue
-		"scaleImage"	"1"	
-		"teambg_2"		"../hud/scoreboard_streak"				// default: ../hud/misc_ammo_area_red
-		"teambg_2_lodef"	"../hud/misc_ammo_area_red_lodef"
-		"teambg_3"		"../hud/scoreboard_streak"			// default: ../hud/misc_ammo_area_blue
-		"teambg_3_lodef"	"../hud/misc_ammo_area_blue_lodef"				
+		"tabPosition"	"0"	
+		"fillcolor"		"0 0 0 0"
+		"PaintBackgroundType"	"0"
+		"border" 		"TFFatLineBorder"
+		
+		if_mvm
+		{
+			"visible"		"1"
+		}
 	}
 	
 	"ItemEffectMeterLabel"
@@ -82,9 +86,9 @@
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"ItemEffectMeterCount"
-		"xpos"					"12"			// default: 25
+		"xpos"					"7"				// default: 25
 		"ypos_minmode"			"18"
-		"ypos"					"10"			// default: 10
+		"ypos"					"18"			// default: 10
 		"zpos"					"2"
 		"wide"					"40"
 		"tall"					"20"	
@@ -93,35 +97,31 @@
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"labelText"				"%progresscount%"
-		"textAlignment"			"north"
+		"textAlignment"			"center"
 		"dulltext"				"0"
 		"brighttext"			"0"
-		"font"					"HudFontMedium"
+		"font"					"HudFontMediumSmall"	// default: HudFontMedium
 		"font_minmode"			"HudFontSmall"
-		"fgcolor"				"TanLight"		// added, not in the original file
+		"fgcolor"				"HudOffWhite"
 	}
 	
-	"StreakBG"								// added, not in the original file
+	"ItemEffectMeterIcon"						// added, not in the original file
 	{
-		"ControlName"		"ImagePanel"
-		"fieldName"		"StreakBG"
-		"xpos"			"20"
-		"ypos"			"8"
-		"zpos"			"-2"
-		"wide"			"40"
-		"tall"			"25"
-		"autoResize"	"0"
-		"pinCorner"		"0"
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"ItemEffectMeterIcon"
+		"xpos"			"37"					// default: 12
+		"ypos"			"18"					// default: 0
+		"zpos"			"0"
+		"wide"			"20"					// default: 76
+		"tall"			"20"					// default: 44
 		"visible"		"1"
+		"visible_minmode"	"0"
 		"enabled"		"1"
-		"tabPosition"	"0"	
-		"fillcolor"		"0 0 0 153"
-		"PaintBackgroundType"	"0"
-		"border" 		"TeamMenuBorder"
-		
-		if_mvm
-		{
-			"visible"		"1"
-		}
+		"image"			"../hud/misc_ammo_area_blue"			// default: ../hud/misc_ammo_area_blue
+		"scaleImage"	"1"	
+		"teambg_2"		"../hud/scoreboard_streak"				// default: ../hud/misc_ammo_area_red
+		"teambg_2_lodef"	"../hud/misc_ammo_area_red_lodef"
+		"teambg_3"		"../hud/scoreboard_streak"			// default: ../hud/misc_ammo_area_blue
+		"teambg_3_lodef"	"../hud/misc_ammo_area_blue_lodef"				
 	}
 }

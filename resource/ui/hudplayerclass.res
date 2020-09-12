@@ -173,9 +173,9 @@
 			"Scout"
 			{
 				"fov"			"25"
-				"angles_x"		"-17"
+				"angles_x"		"-15"				//default: -17
 				"angles_x_minmode"	"-10"
-				"angles_y"		"145"
+				"angles_y"		"155"				//default: 145
 				"angles_z"		"0"
 				"origin_x"		"105"
 				"origin_y"		"4"

@@ -5,15 +5,15 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"HudPlayerHealth"
-		"xpos"			"0"		[$WIN32]
+		"xpos"			"20"		[$WIN32]	// default: 0
 		"xpos_minmode"	"-5"		[$WIN32]
-		"ypos"			"r120"	[$WIN32]
+		"ypos"			"r150"	[$WIN32]		// default: r120
 		"ypos_minmode"	"r88"	[$WIN32]
 		"xpos"			"32"	[$X360]
 		"ypos"			"r144"	[$X360]
 		"zpos"			"2"
 		"wide"			"250"
-		"tall"			"120"
+		"tall"			"140"					// default: 120
 		"visible"		"1"
 		"enabled"		"1"	
 		"HealthBonusPosAdj"	"35"
@@ -24,9 +24,9 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusHealthImage"
-		"xpos"			"125"				// default: 75
+		"xpos"			"75"				// default: 75
 		"xpos_minmode"	"60"
-		"ypos"			"22"				// default: 35
+		"ypos"			"45"				// default: 35
 		"zpos"			"4"
 		"wide"			"61"				// default: 51
 		"tall"			"61"				// default: 51
@@ -38,9 +38,9 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusHealthImageBG"
-		"xpos"			"123"				// default: 73
+		"xpos"			"73"				// default: 73
 		"xpos_minmode"	"58"
-		"ypos"			"20"				// default: 33
+		"ypos"			"43"				// default: 33
 		"zpos"			"3"
 		"wide"			"65"				// default: 55
 		"tall"			"65"				// default: 55
@@ -53,10 +53,10 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusHealthBonusImage"
-		"xpos"			"123"	[$WIN32]	// default: 73
+		"xpos"			"73"	[$WIN32]	// default: 73
 		"xpos_minmode"	"65"	[$WIN32]
 		"xpos"			"83"	[$X360]
-		"ypos"			"20"	[$WIN32]	// default: 33
+		"ypos"			"43"	[$WIN32]	// default: 33
 		"ypos_minmode"	"40"	[$WIN32]
 		"ypos"			"43"	[$X360]
 		"zpos"			"2"
@@ -75,9 +75,9 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusHealthValue"
-		"xpos"			"130"				// default: 76
+		"xpos"			"80"				// default: 76
 		"xpos_minmode"	"61"
-		"ypos"			"43"	[$WIN32]	// default: 52
+		"ypos"			"66"	[$WIN32]	// default: 52
 		"ypos"			"55"	[$X360]
 		"zpos"			"5"
 		"wide"			"50"
@@ -93,9 +93,9 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusHealthValueShadow"
-		"xpos"			"131"				// default: 76
+		"xpos"			"81"
 		"xpos_minmode"	"61"
-		"ypos"			"44"	[$WIN32]	// default: 52
+		"ypos"			"67"	[$WIN32]
 		"ypos"			"55"	[$X360]
 		"zpos"			"5"
 		"wide"			"50"
@@ -111,9 +111,9 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusMaxHealthValue"
-		"xpos"			"131"				// default: 76
+		"xpos"			"81"				// default: 76
 		"xpos_minmode"	"61"
-		"ypos"			"0"		[$WIN32]	// default: 20
+		"ypos"			"28"	[$WIN32]	// default: 20
 		"ypos"			"55"	[$X360]
 		"zpos"			"6"
 		"wide"			"50"
