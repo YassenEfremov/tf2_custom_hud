@@ -212,7 +212,7 @@
 				"fov"			"25"
 				"angles_x"		"-13"
 				"angles_x_minmode"	"-3"
-				"angles_y"		"200"
+				"angles_y"		"205"				//default: 200
 				"angles_z"		"0"
 				"origin_x"		"138"
 				"origin_y"		"-4"
@@ -224,10 +224,10 @@
 				"fov"			"20"
 				"angles_x"		"-5"
 				"angles_x_minmode"	"3"
-				"angles_y"		"178"
+				"angles_y"		"170"				//default: 178
 				"angles_z"		"0"
 				"origin_x"		"150"
-				"origin_y"		"-5"
+				"origin_y"		"-3"				//default: -5
 				"origin_z"		"-96"
 				"origin_z_minmode"	"-60"
 			}
@@ -274,7 +274,7 @@
 				"fov"			"20"
 				"angles_x"		"-10"
 				"angles_x_minmode"	"0"
-				"angles_y"		"168"
+				"angles_y"		"165"				//default: 168
 				"angles_z"		"0"
 				"origin_x"		"140"
 				"origin_x_minmode"	"160"
@@ -290,9 +290,9 @@
 	{
 		"ControlName"			"EditablePanel"
 		"fieldName"				"CarryingWeapon"
-		"xpos"					"20"
+		"xpos"					"r500"					// default: 20
 		"xpos_minmode"			"90"
-		"ypos"					"r27"
+		"ypos"					"r90"					// default: r27
 		"ypos_minmode"			"r36"
 		"zpos"					"100"
 		"wide"					"500"
@@ -304,7 +304,7 @@
 		{
 			"ControlName"			"CTFImagePanel"
 			"fieldName"				"CarryingBackground"
-			"xpos"					"0"
+			"xpos"					"r100"
 			"xpos_minmode"			"0"
 			"ypos"					"0"
 			"ypos_minmode"			"0"
@@ -339,7 +339,7 @@
 			"fieldName"			"CarryingLabel"
 			"font"				"ReplayBrowserSmallest"
 			"font_minmode"		"TFFontMedium"
-			"xpos"				"5"
+			"xpos"				"r95"				// default: 5
 			"xpos_minmode"		"5"
 			"ypos"				"3"
 			"ypos_minmode"		"2"
@@ -352,7 +352,7 @@
 			"pinCorner"			"0"
 			"visible"			"1"
 			"enabled"			"1"
-			"textAlignment"		"North-West"
+			"textAlignment"		"North-East"		// default: North-West
 			"dulltext"			"0"
 			"brighttext"		"0"
 			"proportionaltoparent"	"1"
@@ -366,7 +366,7 @@
 			"fieldName"			"CarryingLabelDropShadow"
 			"font"				"ReplayBrowserSmallest"
 			"font_minmode"		"TFFontMedium"
-			"xpos"				"p0.011"
+			"xpos"				"rp0.189"				// default: p0.011
 			"xpos_minmode"		"6"
 			"ypos"				"p0.12"
 			"ypos_minmode"		"3"
@@ -379,7 +379,7 @@
 			"pinCorner"			"0"
 			"visible"			"1"
 			"enabled"			"1"
-			"textAlignment"		"North-West"
+			"textAlignment"		"North-East"		// default: North-West
 			"dulltext"			"0"
 			"brighttext"		"0"
 			"proportionaltoparent"	"1"
@@ -407,7 +407,7 @@
 			"pinCorner"			"0"
 			"visible"			"1"
 			"enabled"			"1"
-			"textAlignment"		"North-West"
+			"textAlignment"		"North-East"		// default: North-West
 			"dulltext"			"0"
 			"brighttext"		"0"
 			"proportionaltoparent"	"1"

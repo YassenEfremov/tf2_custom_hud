@@ -93,12 +93,12 @@
 		"font_lodef"	"HudFontMedium"
 		"font_minmode"	"HudFontSmall"
 		"fgcolor"		"TanLight"
-		"xpos"			"358"				// default: 59
+		"xpos"			"357"				// default: 59
 		"xpos_minmode"	"65"
 		"ypos"			"198"				// default: 8
 		"ypos_lodef"	"10"
 		"zpos"			"7"
-		"wide"			"70"				// default: 40
+		"wide"			"84"				// default: 40
 		"tall"			"40"				// default: 27
 		"tall_lodef"	"30"
 		"visible"		"0"
@@ -114,12 +114,12 @@
 		"font_lodef"	"HudFontMedium"
 		"font_minmode"	"HudFontSmall"
 		"fgcolor"		"TransparentBlack"
-		"xpos"			"360"				// default: 60
+		"xpos"			"359"				// default: 60
 		"xpos_minmode"	"66"
 		"ypos"			"200"				// default: 9
 		"ypos_lodef"	"11"
 		"zpos"			"7"
-		"wide"			"70"				// default: 40
+		"wide"			"84"				// default: 40
 		"tall"			"40"				// default: 27
 		"tall_lodef"	"30"
 		"visible"		"0"

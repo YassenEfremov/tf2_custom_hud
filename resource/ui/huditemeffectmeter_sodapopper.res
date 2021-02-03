@@ -1,16 +1,17 @@
-"Resource/UI/HudItemEffectMeter.res"
+"Resource/UI/HudItemEffectMeter_SodaPopper.res"
 {
 	HudItemEffectMeter
 	{
 		"fieldName"		"HudItemEffectMeter"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"			"r174"	[$WIN32]			//default: r174
+//		"x_offset"		"40"
+		"xpos"			"r162"	[$WIN32]			// default: r258
+		"ypos"			"r80"	[$WIN32]			// default: r57
 		"xpos_minmode"	"r52"	[$WIN32]
-		"ypos"			"r62"	[$WIN32]			//default: r62
-		"ypos_minmode"	"r54"	[$WIN32]
+		"ypos_minmode"	"r83"	[$WIN32]
 		"xpos"			"r194"	[$X360]
-		"ypos"			"r74"	[$X360]
+		"ypos"			"r124"	[$X360]
 		"wide"			"100"
 		"tall"			"50"
 		"MeterFG"		"White"
@@ -21,8 +22,8 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"ItemEffectMeterBG"
-		"xpos"			"40"
-		"ypos"			"25"
+		"xpos"			"28"
+		"ypos"			"15"
 		"zpos"			"-2"
 		"wide"			"44"
 		"tall"			"25"
@@ -38,15 +39,15 @@
 		if_mvm
 		{
 			"visible"		"1"
-		}	
+		}				
 	}
 	
 	"ItemEffectMeterLabel"
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"ItemEffectMeterLabel"
-		"xpos"					"42"				//default: 42
-		"ypos"					"34"				//default: 30
+		"xpos"					"30"				// default: 40
+		"ypos"					"25"
 		"zpos"					"2"
 		"wide"					"41"
 		"tall"					"15"
@@ -59,7 +60,7 @@
 		"textAlignment_minmode"			"west"
 		"enabled"				"1"
 		"tabPosition"			"0"
-		"labelText"				"#TF_Ball"
+		"labelText"				"#TF_ENERGYDRINK"
 		"textAlignment"			"center"
 		"dulltext"				"0"
 		"brighttext"			"0"
@@ -71,8 +72,8 @@
 		"ControlName"			"ContinuousProgressBar"
 		"fieldName"				"ItemEffectMeter"
 		"font"					"Default"
-		"xpos"					"47"			//default: 47
-		"ypos"					"31"			//default: 28
+		"xpos"					"35"				// default: 47
+		"ypos"					"23"
 		"ypos_minmode"			"0"
 		"xpos_minmode"			"0"
 		"zpos"					"2"

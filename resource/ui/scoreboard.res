@@ -402,19 +402,21 @@
 	}
 	"ServerTimeLeftInsetBG"
 	{
-		"ControlName"	"EditablePanel"
+		"ControlName"	"ImagePanel"
 		"fieldName"		"ServerTimeLeftInsetBG"
 		"xpos"			"286"
-		"ypos"			"12"
-		"zpos"			"1"
+		"ypos"			"13"
+		"zpos"			"-2"
 		"wide"			"68"
-		"tall"			"23"
+		"tall"			"20"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"border"		"TFFatLineBorderOpaque"
-
+		"tabPosition"	"0"	
+		"fillcolor"		"0 0 0 204"
+		"PaintBackgroundType"	"0"
+		
 		if_mvm
 		{
 			"visible"		"0"
@@ -450,7 +452,7 @@
 		"labelText"		"%servertime%"
 		"textAlignment"		"center"
 		"xpos"			"284"
-		"ypos"			"15"						// default: 14
+		"ypos"			"13"						// default: 14
 		"zpos"			"2"
 		"wide"			"72"
 		"tall"			"20"
@@ -604,7 +606,7 @@
 	}							
 	"ShadedBar"
 	{
-		"ControlName"		"ImagePanel"
+		"ControlName"	"ImagePanel"
 		"fieldName"		"ShadedBar"
 		"xpos"			"5"							// default: 4
 		"ypos"			"372"
@@ -616,7 +618,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"	
-		"fillcolor"		"0 0 0 153"
+		"fillcolor"		"0 0 0 204"
 		"PaintBackgroundType"	"0"
 		
 		if_mvm
@@ -790,7 +792,7 @@
 		"ControlName"		"EditablePanel"
 		"fieldName"		"PlayerNameBG"
 		"xpos"			"105"
-		"ypos"			"372"
+		"ypos"			"371"						// default: 372
 		"zpos"			"-1"
 		"wide"			"485"
 		"tall"			"29"
@@ -798,7 +800,7 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"border"		"TFThinLineBorder"
+		"border"		"TFFatLineBorder"			// default: TFThinLineBorder
 		
 		if_mvm
 		{
@@ -813,7 +815,7 @@
 		"labelText"		"%playername%"
 		"textAlignment"		"west"
 		"xpos"			"115"
-		"ypos"			"377"
+		"ypos"			"375"						// default: 377
 		"zpos"			"3"
 		"wide"			"300"
 		"tall"			"20"
