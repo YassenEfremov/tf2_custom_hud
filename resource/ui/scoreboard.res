@@ -7,7 +7,7 @@
 		"xpos"			"cs-0.5"
 		"ypos"			"31"
 		"wide"			"640"
-		"tall"			"448"
+		"tall"			"480"						// default: 448
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -26,18 +26,18 @@
 	}
 	"BlueScoreBG"
 	{
-		"ControlName"		"ImagePanel"
+		"ControlName"	"EditablePanel"				// default: ImagePanel => Changed everything...
 		"fieldName"		"BlueScoreBG"
-		"xpos"			"-4"
-		"ypos"			"9"
-		"wide"			"290"
-		"tall"			"71"
+		"xpos"			"0"
+		"ypos"			"48"						// default: 9
+		"zpos"			"-1"
+		"wide"			"200"						// default: 290
+		"tall"			"24"						// default: 71
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"../hud/score_panel_blue_bg_solid"
-		"scaleImage"		"1"
+		"border"		"TFFatLineBorderBlueBGOpaque"
 		
 		if_mvm
 		{
@@ -48,11 +48,11 @@
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"BlueTeamImage"
-		"xpos"			"7"
-		"ypos"			"9"
+		"xpos"			"8"							// default: 7
+		"ypos"			"39"							// default: 9
 		"zpos"			"20"
-		"wide"			"60"
-		"tall"			"60"
+		"wide"			"42"							// default: 60
+		"tall"			"42"							// default: 60
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			"../hud/team_blue"
@@ -93,18 +93,18 @@
 	}
 	"RedScoreBG"
 	{
-		"ControlName"		"ImagePanel"
+		"ControlName"	"EditablePanel"				// default: ImagePanel => Changed everything...
 		"fieldName"		"RedScoreBG"
-		"xpos"			"354"
-		"ypos"			"9"
-		"wide"			"290"
-		"tall"			"71"
+		"xpos"			"440"						// default: 354
+		"ypos"			"48"						// default: 9
+		"zpos"			"-1"
+		"wide"			"200"						// default: 290
+		"tall"			"24"						// default: 71
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"../hud/score_panel_red_bg_solid"
-		"scaleImage"		"1"
+		"border"		"TFFatLineBorderRedBGOpaque"
 
 		if_mvm
 		{
@@ -116,11 +116,11 @@
 		"ControlName"		"ImagePanel"
 		"fieldName"		"RedTeamImage"
 		"fieldName"		"BlueTeamImage"
-		"xpos"			"571"
-		"ypos"			"-5"
+		"xpos"			"586"						// default: 571
+		"ypos"			"28"						// default: -5
 		"zpos"			"20"
-		"wide"			"80"
-		"tall"			"80"
+		"wide"			"60"						// default: 80
+		"tall"			"60"						// default: 80
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			"../hud/team_red"
@@ -170,7 +170,7 @@
 		"tall"			"410"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
+		"visible"		"0"							// default: 1
 		"enabled"		"1"
 		"border"		"TFFatLineBorder"			// default: TFThinLineBorder
 		
@@ -179,7 +179,37 @@
 			"ypos"			"0"
 			"tall"			"448"
 		}
-	}							
+	}
+	"MainBGBlue"				// added, replacement for MainBG
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"MainBGBlue"
+		"xpos"			"0"
+		"ypos"			"78"
+		"zpos"			"-1"
+		"wide"			"320"
+		"tall"			"355"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"border"		"TFFatLineBorder"
+	}
+	"MainBGRed"					// added, replacement for MainBG
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"MainBGRed"
+		"xpos"			"320"
+		"ypos"			"78"
+		"zpos"			"-1"
+		"wide"			"320"
+		"tall"			"355"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"border"		"TFFatLineBorder"
+	}
 	"BlueTeamLabel"
 	{
 		"ControlName"		"CExLabel"
@@ -209,8 +239,8 @@
 		"font"			"ScoreboardTeamScoreNew"
 		"labelText"		"%blueteamscore%"
 		"textAlignment"		"east"
-		"xpos"			"175"
-		"ypos"			"12" 
+		"xpos"			"101"						// default: 175
+		"ypos"			"34" 						// default: 12
 		"zpos"			"4"
 		"wide"			"100"
 		"tall"			"55"
@@ -232,9 +262,9 @@
 		"fgcolor"		"Black"
 		"labelText"		"%blueteamscore%"
 		"textAlignment"		"east"
-		"xpos"			"176"
-		"ypos"			"13" 
-		"zpos"			"4"
+		"xpos"			"103"						// default: 176
+		"ypos"			"35" 						// default: 13
+		"zpos"			"3"							// default: 4
 		"wide"			"100"
 		"tall"			"55"
 		"autoResize"	"0"
@@ -246,7 +276,27 @@
 		{
 			"visible"		"0"
 		}
-	}							
+	}
+	"BlueTeamScoreNumberBG"		// added, not in the original file
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"BlueTeamScoreNumberBG"
+		"xpos"			"170"
+		"ypos"			"43"
+		"zpos"			"0"
+		"wide"			"40"
+		"tall"			"34"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"border"		"TFFatLineBorderBlueBGOpaque"
+		
+		if_mvm
+		{
+			"visible"		"0"
+		}
+	}	
 	"BlueTeamPlayerCount"
 	{
 		"ControlName"		"CExLabel"
@@ -255,7 +305,7 @@
 		"labelText"		"%blueteamplayercount%"
 		"textAlignment"		"west"
 		"xpos"			"80"
-		"ypos"			"42"
+		"ypos"			"52"						// default: 42
 		"wide"			"160"
 		"tall"			"15"
 		"autoResize"		"0"
@@ -297,8 +347,8 @@
 		"font"			"ScoreboardTeamScoreNew"
 		"labelText"		"%redteamscore%"
 		"textAlignment"		"west"
-		"xpos"			"368"
-		"ypos"			"12" 
+		"xpos"			"439"						// default: 368
+		"ypos"			"34" 						// default: 12
 		"zpos"			"4"
 		"wide"			"100"
 		"tall"			"55"
@@ -320,8 +370,8 @@
 		"fgcolor"		"Black"
 		"labelText"		"%redteamscore%"
 		"textAlignment"		"west"
-		"xpos"			"369"
-		"ypos"			"13"
+		"xpos"			"441"						// default: 369
+		"ypos"			"35" 						// default: 13
 		"zpos"			"4"
 		"wide"			"100"
 		"tall"			"55"
@@ -334,7 +384,27 @@
 		{
 			"visible"		"0"
 		}
-	}							
+	}
+	"RedTeamScoreNumberBG"		// added, not in the original file
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"RedTeamScoreNumberBG"
+		"xpos"			"430"
+		"ypos"			"43"
+		"zpos"			"0"
+		"wide"			"40"
+		"tall"			"34"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"border"		"TFFatLineBorderRedBGOpaque"
+		
+		if_mvm
+		{
+			"visible"		"0"
+		}
+	}		
 	"RedTeamPlayerCount"
 	{
 		"ControlName"		"CExLabel"
@@ -342,8 +412,8 @@
 		"font"			"ScoreboardTeamCountNew"
 		"labelText"		"%redteamplayercount%"
 		"textAlignment"		"east"
-		"xpos"			"401"
-		"ypos"			"42"
+		"xpos"			"400"						// default: 401
+		"ypos"			"52"						// default: 42
 		"wide"			"160"
 		"tall"			"15"
 		"autoResize"		"0"
@@ -402,20 +472,18 @@
 	}
 	"ServerTimeLeftInsetBG"
 	{
-		"ControlName"	"ImagePanel"
+		"ControlName"		"ImagePanel"
 		"fieldName"		"ServerTimeLeftInsetBG"
 		"xpos"			"286"
 		"ypos"			"13"
-		"zpos"			"-2"
+		"zpos"			"-1"
 		"wide"			"68"
 		"tall"			"20"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"tabPosition"	"0"	
-		"fillcolor"		"0 0 0 204"
-		"PaintBackgroundType"	"0"
+		"border"		"InnerShadowBorderThin"
 		
 		if_mvm
 		{
@@ -495,7 +563,7 @@
 		"ControlName"	"SectionedListPanel"
 		"fieldName"		"BluePlayerList"
 		"xpos"			"5"
-		"ypos"			"67"
+		"ypos"			"80"						// default: 67
 		"zpos"			"20"
 		"wide"			"310"
 		"tall"			"280"
@@ -519,7 +587,7 @@
 		"ControlName"	"SectionedListPanel"
 		"fieldName"		"RedPlayerList"
 		"xpos"			"325"
-		"ypos"			"67"
+		"ypos"			"80"						// default: 67
 		"zpos"			"20"
 		"wide"			"310"
 		"tall"			"280"
@@ -610,7 +678,7 @@
 		"fieldName"		"ShadedBar"
 		"xpos"			"5"							// default: 4
 		"ypos"			"372"
-		"zpos"			"-2"
+		"zpos"			"-1"
 		"wide"			"630"						// default: 633
 		"tall"			"71"						// default: 72
 		"autoResize"	"0"
@@ -618,7 +686,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"	
-		"fillcolor"		"0 0 0 204"
+		"fillcolor"		"0 0 0 153"
 		"PaintBackgroundType"	"0"
 		
 		if_mvm
@@ -838,7 +906,7 @@
 		"labelText"		"%server%"
 		"textAlignment"		"east"
 		"xpos"			"315"
-		"ypos"			"375"
+		"ypos"			"374"						// default: 375
 		"zpos"			"3"
 		"wide"			"265"
 		"tall"			"12"
@@ -860,7 +928,7 @@
 		"labelText"		"%mapname%"
 		"textAlignment"	"east"
  		"xpos"			"315"
-		"ypos"			"385"
+		"ypos"			"384"						// default: 385
 		"zpos"			"3"
 		"wide"			"265"
 		"tall"			"12"

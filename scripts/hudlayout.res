@@ -16,14 +16,14 @@
 		"fieldName" "HudWeaponAmmo"
 		"visible" "1"
 		"enabled" "1"
-		"xpos"	"r437"	[$WIN32]			//default: r95
+		"xpos"	"r437"	[$WIN32]			// default: r95
 		"xpos_minmode"	"r85"	[$WIN32]
-		"ypos"	"r255"	[$WIN32]			//default: r55
+		"ypos"	"r255"	[$WIN32]			// default: r55
 		"ypos_minmode"	"r36"	[$WIN32]
 		"xpos"	"r131"	[$X360]
 		"ypos"	"r77"	[$X360]
-		"wide"	"437"						//default: 94
-		"tall"	"245"						//default: 45
+		"wide"	"437"						// default: 94
+		"tall"	"245"						// default: 45
 	}
 	
 	HudObjectiveStatus
@@ -258,7 +258,7 @@
 		"visible" 	"0"
 		"enabled" 	"1"
 		"xpos"		"c-126"
-		"ypos"		"285"
+		"ypos"		"300"						// default: 285
 		"wide"	 	"252"
 		"tall"	 	"35"
 		"tall_minmode"	 	"28"
@@ -278,7 +278,7 @@
 		"visible" 	"0"
 		"enabled" 	"1"
 		"xpos"		"c-126"
-		"ypos"		"250"
+		"ypos"		"350"						// default: 250
 		"wide"	 	"252"
 		"tall"	 	"35"
 		"tall_minmode"	 	"28"
@@ -484,8 +484,8 @@
 		"fieldName" "HudDeathNotice"
 		"visible" "1"
 		"enabled" "1"
-		"xpos"	 "r640"	[$WIN32]
-		"ypos"	 "18"	[$WIN32]
+		"xpos"	 "rs1-10"	[$WIN32]			// default: r640
+		"ypos"	 "40"	[$WIN32]				// default: 18
 		"xpos"	 "r672"	[$X360]
 		"ypos"	 "35"	[$X360]
 		"wide"	 "628"

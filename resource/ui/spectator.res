@@ -16,26 +16,48 @@
 	}
 	"topbar"
 	{
-		"ControlName"		"Panel"
+		"ControlName"	"Panel"
 		"fieldName"		"TopBar"
 		"xpos"			"0"
 		"ypos"			"0"
-		"tall"			"84"	[$WIN32]			// default: 84
-		"tall_minmode"			"20"	[$WIN32]
+		"tall"			"0"	[$WIN32]		// default: 84
+		"tall_minmode"	"20"	[$WIN32]
 		"tall"			"104"	[$X360]		
 		"wide"			"f0"
-		"autoResize"		"0"
+		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"		"0"
+	}
+	"topbarNew"				// added, replacement for topbar
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"topbarNew"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-2"
+		"wide"			"f0"
+		"tall"			"40"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"	
+		"fillcolor"		"46 43 42 230"
+		"PaintBackgroundType"	"0"
+		
+		if_mvm
+		{
+			"visible"		"1"
+		}
 	}
 	"BottomBar"
 	{
 		"ControlName"	"Frame"
 		"fieldName"		"BottomBar"
 		"xpos"			"0"
-		"ypos"			"r70"	[$WIN32]
+		"ypos"			"r0"	[$WIN32]		// default: r70
 		"ypos"			"r90"	[$X360]		
 		"ypos_minmode"	"r20"
 		"tall"			"70"	[$WIN32]
@@ -52,7 +74,7 @@
 		"ControlName"		"Panel"
 		"fieldName"		"bottombarblank"
 		"xpos"			"0"
-		"ypos"			"r70"	[$WIN32]		// default: r70
+		"ypos"			"r0"	[$WIN32]		// default: r70
 		"ypos"			"r90"	[$X360]		
 		"ypos_minmode"	"r0"
 		"tall"			"70"	[$WIN32]		// this needs to match the size of BottomBar
@@ -66,6 +88,28 @@
 		"enabled"		"1"
 		"tabPosition"		"0"
 	}
+	"bottombarNew"			// added, replacement for bottombarblank
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"bottombarNew"
+		"xpos"			"0"
+		"ypos"			"r45"
+		"zpos"			"-2"
+		"wide"			"f0"
+		"tall"			"46"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"	
+		"fillcolor"		"46 43 42 230"
+		"PaintBackgroundType"	"0"
+		
+		if_mvm
+		{
+			"visible"		"1"
+		}
+	}
 	"ReinforcementsLabel"
 	{
 		"ControlName"		"CExLabel"
@@ -73,7 +117,7 @@
 		"xpos"			"c-300"	[$WIN32]
 		"xpos_minmode"	"0"
 		"xpos"			"c-200"	[$X360]
-		"ypos"			"50"	[$WIN32]
+		"ypos"			"45"	[$WIN32]			// default: 50
 		"ypos_minmode"	"3"		[$WIN32]
 		"ypos"			"67"	[$X360]
 		"ypos_hidef"	"79"
@@ -92,7 +136,7 @@
 		"textAlignment_minmode"		"west"
 		"use_proportional_insets_minmode"	"1"
 		"textinsetx_minmode"				"5"
-		"font"			"HudFontMediumSmallSecondary"
+		"font"			"HudFontSmallishBold"		// default: HudFontMediumSmallSecondary
 		"font_minmode"			"HudFontSmall"
 	}
 	"BuyBackLabel"
@@ -119,7 +163,7 @@
 		"fieldName"		"MapLabel"
 		"font"			"HudFontSmall"
 		"font_hidef"		"HudFontMedium"
-		"xpos"			"r260"	[$WIN32]
+		"xpos"			"rs1-20"	[$WIN32]			// default: r260
 		"ypos"			"16"	[$WIN32]
 		"xpos"			"r285"	[$X360]
 		"ypos"			"32"	[$X360]
@@ -134,6 +178,7 @@
 		"enabled"		"1"
 		"labelText"		"map: cp_bridge"
 		"textAlignment"		"east"
+		"fgcolor_override"		"HudOffWhite"
 	}
 	"ClassOrTeamLabel"
 	{
@@ -142,7 +187,7 @@
 		"xpos"			"c-85"
 		"xpos_hidef"	"c-65"
 		"xpos_lodef"	"40"
-		"ypos"			"68"
+		"ypos"			"60"							// default: 68
 		"ypos_hidef"	"90"
 		"ypos_lodef"	"30"	
 		"wide"			"170"
@@ -164,35 +209,17 @@
 		"font_hidef"	"HudFontSmallest"
 		"font_lodef"	"HudFontSmall"
 		"wrap_lodef"			"1"
+		"fgcolor_override"		"HudOffWhite"
 	}
-	"SwitchCamModeKeyLabel"
-	{
-		"ControlName"		"CExLabel"
-		"fieldName"		"SwitchCamModeKeyLabel"
-		"xpos"			"5"		[$WIN32]
-		"ypos"			"10"	[$WIN32]
-		"xpos"			"53"	[$X360]
-		"ypos"			"40"	[$X360]
-		"wide"			"60"	[$WIN32]
-		"wide"			"60"	[$X360]
-		"tall"			"20"
-		"autoResize"		"0"
-		"pinCorner"		"0"
-		"visible"		"1"	[$WIN32]
-		"visible_minmode"		"0"
-		"visible"		"0"	[$X360]
-		"enabled"		"1"
-		"labelText"		"#TF_Spectator_ChangeTeam"
-		"textAlignment"		"east"
-		"font"			"SpectatorKeyHints"
-		
-	}
-	"SwitchCamModeLabel"
+	
+	// Label and KeyLable were swapped
+	
+	"SwitchCamModeLabel"		// This came second
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"SwitchCamModeLabel"
-		"xpos"			"80"	[$WIN32]
-		"ypos"			"10"	[$WIN32]
+		"xpos"			"20"	[$WIN32]				// default: 80
+		"ypos"			"0"	[$WIN32]					// default: 10
 		"xpos"			"128"	[$X360]
 		"ypos"			"40"	[$X360]		
 		"wide"			"125"	[$WIN32]
@@ -207,15 +234,16 @@
 		"labelText"		"#TF_Spectator_SwitchCamMode"
 		"textAlignment"		"west"
 		"font"			"SpectatorKeyHints"
+		"fgcolor"		"HudOffWhite"
 	}
-	"CycleTargetFwdKeyLabel"
+	"SwitchCamModeKeyLabel"		// This came first
 	{
 		"ControlName"		"CExLabel"
-		"fieldName"		"CycleTargetFwdKeyLabel"
-		"xpos"			"5"	[$WIN32]
-		"ypos"			"20"	[$WIN32]
+		"fieldName"		"SwitchCamModeKeyLabel"
+		"xpos"			"120"	[$WIN32]				// default: 5
+		"ypos"			"0"	[$WIN32]					// default: 10
 		"xpos"			"53"	[$X360]
-		"ypos"			"50"	[$X360]		
+		"ypos"			"40"	[$X360]
 		"wide"			"60"	[$WIN32]
 		"wide"			"60"	[$X360]
 		"tall"			"20"
@@ -225,16 +253,18 @@
 		"visible_minmode"		"0"
 		"visible"		"0"	[$X360]
 		"enabled"		"1"
-		"labelText"		"#TF_Spectator_ClassOrTeamKey"
-		"textAlignment"		"east"
+		"labelText"		"#TF_Spectator_ChangeTeam"
+		"textAlignment"		"west"						// default: "east"
 		"font"			"SpectatorKeyHints"
+		"fgcolor"		"HudOffWhite"
 	}
-	"CycleTargetFwdLabel"
+	
+	"CycleTargetFwdLabel"		// This came second
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"CycleTargetFwdLabel"
-		"xpos"			"80"	[$WIN32]
-		"ypos"			"20"	[$WIN32]
+		"xpos"			"20"	[$WIN32]				// default: 80
+		"ypos"			"10"	[$WIN32]					// default: 20
 		"xpos"			"128"	[$X360]
 		"ypos"			"50"	[$X360]		
 		"wide"			"125"	[$WIN32]
@@ -249,17 +279,18 @@
 		"labelText"		"#TF_Spectator_CycleTargetFwd"
 		"textAlignment"		"west"
 		"font"			"SpectatorKeyHints"
+		"fgcolor"		"HudOffWhite"
 	}
-	"CycleTargetRevKeyLabel"
+	"CycleTargetFwdKeyLabel"	// This came first
 	{
 		"ControlName"		"CExLabel"
-		"fieldName"		"CycleTargetRevKeyLabel"
-		"xpos"			"5"	[$WIN32]
-		"ypos"			"30"	[$WIN32]
+		"fieldName"		"CycleTargetFwdKeyLabel"
+		"xpos"			"120"	[$WIN32]				// default: 5
+		"ypos"			"10"	[$WIN32]					// default: 20
 		"xpos"			"53"	[$X360]
-		"ypos"			"60"	[$X360]		
+		"ypos"			"50"	[$X360]		
 		"wide"			"60"	[$WIN32]
-		"wide"			"60"	[$X360]		
+		"wide"			"60"	[$X360]
 		"tall"			"20"
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -268,15 +299,16 @@
 		"visible"		"0"	[$X360]
 		"enabled"		"1"
 		"labelText"		"#TF_Spectator_ClassOrTeamKey"
-		"textAlignment"		"east"
+		"textAlignment"		"west"						// default: "east"
 		"font"			"SpectatorKeyHints"
+		"fgcolor_override"		"HudOffWhite"
 	}
-	"CycleTargetRevLabel"
+	"CycleTargetRevLabel"		// This came second
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"CycleTargetRevLabel"
-		"xpos"			"80"	[$WIN32]
-		"ypos"			"30"	[$WIN32]
+		"xpos"			"20"	[$WIN32]				// default: 80
+		"ypos"			"20"	[$WIN32]				// default: 30
 		"xpos"			"128"	[$X360]
 		"ypos"			"60"	[$X360]		
 		"wide"			"125"	[$WIN32]
@@ -291,27 +323,50 @@
 		"labelText"		"#TF_Spectator_CycleTargetRev"
 		"textAlignment"		"west"
 		"font"			"SpectatorKeyHints"
+		"fgcolor"		"HudOffWhite"
+	}
+	"CycleTargetRevKeyLabel"	// This came first
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"		"CycleTargetRevKeyLabel"
+		"xpos"			"120"	[$WIN32]				// default: 5
+		"ypos"			"20"	[$WIN32]				// default: 30
+		"xpos"			"53"	[$X360]
+		"ypos"			"60"	[$X360]		
+		"wide"			"60"	[$WIN32]
+		"wide"			"60"	[$X360]		
+		"tall"			"20"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"1"	[$WIN32]
+		"visible_minmode"		"0"
+		"visible"		"0"	[$X360]
+		"enabled"		"1"
+		"labelText"		"#TF_Spectator_ClassOrTeamKey"
+		"textAlignment"		"west"						// default: "east"
+		"font"			"SpectatorKeyHints"
+		"fgcolor_override"		"HudOffWhite"
 	}
 	"TipLabel"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"TipLabel"
-		"xpos"			"15"
+		"xpos"			"20"					// default: 15
 		"xpos_hidef"	"60"
 		"xpos_lodef"	"45"
-		"ypos"			"r67"
-		"ypos_lodef"		"28"
-		"ypos_hidef"		"35"
-		"wide"			"145"
+		"ypos"			"r43"					// default: r67
+		"ypos_lodef"	"28"
+		"ypos_hidef"	"35"
+		"wide"			"200"					// default: 145
 		"wide_hidef"	"230"
 		"wide_lodef"	"240"
-		"tall"			"64"
+		"tall"			"40"					// default: 64
 		"tall_hidef"	"70"
 		"tall_lodef"	"70"
-		"autoResize"		"0"
+		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
-		"visible_minmode"		"0"
+		"visible_minmode"	"0"
 		"enabled"		"1"
 		"labelText"		"%tip%"
 		"textAlignment"		"center"	[$WIN32]
@@ -320,6 +375,7 @@
 		"font_hidef"	"HudFontSmall"
 		"font_lodef"	"DefaultVerySmall"
 		"wrap"			"1"
+		"fgcolor"		"HudOffWhite"
 	}
 	"itempanel"
 	{
