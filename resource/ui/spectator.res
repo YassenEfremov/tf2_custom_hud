@@ -44,7 +44,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"	
-		"fillcolor"		"46 43 42 230"
+		"fillcolor"		"46 43 42 240"
 		"PaintBackgroundType"	"0"
 		
 		if_mvm
@@ -102,7 +102,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"	
-		"fillcolor"		"46 43 42 230"
+		"fillcolor"		"46 43 42 240"
 		"PaintBackgroundType"	"0"
 		
 		if_mvm

@@ -49,10 +49,10 @@
 		"ControlName"		"ImagePanel"
 		"fieldName"		"BlueTeamImage"
 		"xpos"			"8"							// default: 7
-		"ypos"			"39"							// default: 9
+		"ypos"			"39"						// default: 9
 		"zpos"			"20"
-		"wide"			"42"							// default: 60
-		"tall"			"42"							// default: 60
+		"wide"			"42"						// default: 60
+		"tall"			"42"						// default: 60
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			"../hud/team_blue"
@@ -164,13 +164,13 @@
 		"ControlName"		"EditablePanel"
 		"fieldName"		"MainBG"
 		"xpos"			"0"
-		"ypos"			"38"
+		"ypos"			"78"						// default: 38
 		"zpos"			"-1"
 		"wide"			"640"
-		"tall"			"410"
+		"tall"			"355"						// default: 410
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"0"							// default: 1
+		"visible"		"1"							// default: 1
 		"enabled"		"1"
 		"border"		"TFFatLineBorder"			// default: TFThinLineBorder
 		
@@ -191,7 +191,7 @@
 		"tall"			"355"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"border"		"TFFatLineBorder"
 	}
@@ -206,7 +206,7 @@
 		"tall"			"355"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"border"		"TFFatLineBorder"
 	}
@@ -610,17 +610,17 @@
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"VerticalLine"
-		"xpos"			"319"
-		"ypos"			"70"
+		"xpos"			"p0.3745"					// default: 319
+		"ypos"			"90"						// default: 70
 		"zpos"			"2"
-		"wide"			"2"
-		"tall"			"292"
+		"wide"			"p0.001"					// default: 2
+		"tall"			"270"						// default: 292
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"0"
+		"visible"		"1"							// default: 0
 		"enabled"		"1"
 		"tabPosition"	"0"	
-		"fillcolor"		"0 0 0 153"
+		"fillcolor"		"White"						// default: "0 0 0 153"
 		"PaintBackgroundType"	"0"
 		
 		if_mvm
@@ -677,16 +677,16 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"ShadedBar"
 		"xpos"			"5"							// default: 4
-		"ypos"			"372"
+		"ypos"			"380"						// default: 372
 		"zpos"			"-1"
 		"wide"			"630"						// default: 633
-		"tall"			"71"						// default: 72
+		"tall"			"48"						// default: 72
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"	
-		"fillcolor"		"0 0 0 153"
+		"fillcolor"		"0 0 0 179"
 		"PaintBackgroundType"	"0"
 		
 		if_mvm
@@ -722,8 +722,8 @@
 		"xpos"			"-10"
 		"ypos"			"185"
 		"zpos"			"10"		
-		"wide"			"130"
-		"tall"			"260"
+		"wide"			"100"						// default: 130
+		"tall"			"243"						// default: 260
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"0"
@@ -740,16 +740,16 @@
 			"visible"		"0"
 		}
 				
-		"model"
+		"model"		// this is the default model for all classes
 		{
 			"force_pos"	"1"
-
-			"angles_x" "0"
+	
+			"angles_x" "-8"							// default: 0
 			"angles_y" "172"
 			"angles_z" "0"
-			"origin_x" "200"
-			"origin_y" "0"
-			"origin_z" "-60"
+			"origin_x" "320"						// default: 200
+			"origin_y" "-3"							// default: 0
+			"origin_z" "-120"						// default" -60
 			"frame_origin_x"	"0"
 			"frame_origin_y"	"0"
 			"frame_origin_z"	"0"
@@ -758,7 +758,7 @@
 			"modelname"		""
 		}
 
-		"customclassdata"
+		"customclassdata"		// these are the models for each class
 		{
 			"undefined"
 			{
@@ -766,12 +766,12 @@
 			"Scout"
 			{
 				"fov"			"25"
-				"angles_x"		"-17"
-				"angles_y"		"145"
+				"angles_x"		"-20"				// default: -17
+				"angles_y"		"165"				// default: 145
 				"angles_z"		"0"
-				"origin_x"		"105"
-				"origin_y"		"4"
-				"origin_z"		"-82"
+				"origin_x"		"130"				// default: 105
+				"origin_y"		"0"
+				"origin_z"		"-110"				// default: -82
 			}
 			"Sniper"
 			{
@@ -781,37 +781,37 @@
 				"angles_z"		"0"
 				"origin_x"		"130"
 				"origin_y"		"-3"
-				"origin_z"		"-97"
+				"origin_z"		"-120"				// default: -97
 			}
 			"Soldier"
 			{
 				"fov"			"25"
-				"angles_x"		"-10"
+				"angles_x"		"-15"				// default: -10
 				"angles_y"		"170"
 				"angles_z"		"0"
 				"origin_x"		"145"
 				"origin_y"		"-5"
-				"origin_z"		"-90"
+				"origin_z"		"-120"				// default: -90
 			}
 			"Demoman"
 			{
 				"fov"			"25"
-				"angles_x"		"-13"
+				"angles_x"		"-20"				// default: -13
 				"angles_y"		"200"
 				"angles_z"		"0"
-				"origin_x"		"138"
-				"origin_y"		"-4"
-				"origin_z"		"-93"
+				"origin_x"		"140"				// default: 138
+				"origin_y"		"-5"				// default: -4
+				"origin_z"		"-120"				// default: -93
 			}
 			"Medic"
 			{
 				"fov"			"20"
 				"angles_x"		"-5"
-				"angles_y"		"178"
+				"angles_y"		"175"				// default: 178
 				"angles_z"		"0"
 				"origin_x"		"150"
 				"origin_y"		"-5"
-				"origin_z"		"-96"
+				"origin_z"		"-115"				// default: -96
 			}
 			"Heavy"
 			{
@@ -821,7 +821,7 @@
 				"angles_z"		"0"
 				"origin_x"		"200"
 				"origin_y"		"0"
-				"origin_z"		"-102"
+				"origin_z"		"-130"				// default: -102
 			}
 			"Pyro"
 			{
@@ -831,27 +831,27 @@
 				"angles_z"		"0"
 				"origin_x"		"175"
 				"origin_y"		"-5"
-				"origin_z"		"-90"
+				"origin_z"		"-120"				// default: -90
 			}
 			"Spy"
 			{
 				"fov"			"20"
-				"angles_x"		"-5"
-				"angles_y"		"160"
+				"angles_x"		"-10"				// default: -5
+				"angles_y"		"170"				// default: 170
 				"angles_z"		"0"
 				"origin_x"		"160"
 				"origin_y"		"0"
-				"origin_z"		"-95"
+				"origin_z"		"-120"				// default: -95
 			}
 			"Engineer"
 			{
 				"fov"			"20"
-				"angles_x"		"-10"
-				"angles_y"		"168"
+				"angles_x"		"-15"				// default: -10
+				"angles_y"		"175"				// default: 168
 				"angles_z"		"0"
 				"origin_x"		"140"
-				"origin_y"		"-2"
-				"origin_z"		"-82"
+				"origin_y"		"-5"				// default: -2
+				"origin_z"		"-105"				// default: -82
 			}
 		}
 	}
@@ -1203,8 +1203,8 @@
 	{
 		"ControlName"		"EditablePanel"
 		"fieldName"		"LocalPlayerStatsPanel"
-		"xpos"			"0"
-		"ypos"			"395"
+		"xpos"			"60"						// default: 0
+		"ypos"			"380"						// default: 395
 		"zpos"			"3"
 		"wide"			"600"
 		"tall"			"448"
