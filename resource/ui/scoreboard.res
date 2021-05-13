@@ -719,7 +719,7 @@
 		"ControlName"	"CTFPlayerModelPanel"
 		"fieldName"		"classmodelpanel"
 		
-		"xpos"			"-10"
+		"xpos"			"0"							// default: -10
 		"ypos"			"185"
 		"zpos"			"10"		
 		"wide"			"100"						// default: 130
@@ -860,7 +860,7 @@
 		"ControlName"		"EditablePanel"
 		"fieldName"		"PlayerNameBG"
 		"xpos"			"105"
-		"ypos"			"371"						// default: 372
+		"ypos"			"372"
 		"zpos"			"-1"
 		"wide"			"485"
 		"tall"			"29"
@@ -1203,10 +1203,10 @@
 	{
 		"ControlName"		"EditablePanel"
 		"fieldName"		"LocalPlayerStatsPanel"
-		"xpos"			"60"						// default: 0
+		"xpos"			"100"						// default: 0
 		"ypos"			"380"						// default: 395
 		"zpos"			"3"
-		"wide"			"600"
+		"wide"			"540"						// default: 600
 		"tall"			"448"
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -1217,7 +1217,7 @@
 		{
 			"visible"		"1"
 		}
-
+								//////////////////////////////////// FIX EVERYTHING BELOW /////////////////////////////
 		"KillsLabel"
 		{
 			"ControlName"		"CExLabel"
@@ -1225,10 +1225,10 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_KillsLabel"
 			"textAlignment"		"east"
-			"xpos"			"80"
-			"ypos"			"0"
+			"xpos"			"-20"					// default: 80
+			"ypos"			"20"					// default: 0
 			"zpos"			"3"
-			"wide"			"95"
+			"wide"			"50"					// default: 95
 			"tall"			"20"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1242,10 +1242,10 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_DeathsLabel"
 			"textAlignment"		"east"
-			"xpos"			"80"
-			"ypos"			"10"
+			"xpos"			"-20"					// default: 80
+			"ypos"			"30"					// default: 10
 			"zpos"			"3"
-			"wide"			"95"
+			"wide"			"50"					// default: 95
 			"tall"			"20"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1259,10 +1259,10 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_AssistsLabel"
 			"textAlignment"		"east"
-			"xpos"			"80"
+			"xpos"			"45"					// start of kills + 10 				// default: 80
 			"ypos"			"20"
 			"zpos"			"3"
-			"wide"			"95"
+			"wide"			"50"					// default: 95
 			"tall"			"20"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1276,10 +1276,10 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_DestructionLabel"
 			"textAlignment"		"east"
-			"xpos"			"80"
+			"xpos"			"45"					// start of deaths + 10 			// default: 80
 			"ypos"			"30"
 			"zpos"			"3"
-			"wide"			"95"
+			"wide"			"50"					// default: 95
 			"tall"			"20"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1293,8 +1293,8 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%kills%"
 			"textAlignment"		"west"
-			"xpos"			"180"
-			"ypos"			"0"
+			"xpos"			"35"					// end of label + 5		  			// default: 180
+			"ypos"			"20"					// default: 0
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
@@ -1310,8 +1310,8 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%deaths%"
 			"textAlignment"		"west"
-			"xpos"			"180"
-			"ypos"			"10"
+			"xpos"			"35"					// end of label + 5		  			// default: 180
+			"ypos"			"30"					// default: 10
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
@@ -1320,7 +1320,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 		}	
-		"GameType"
+		"GameType"									// what is this ???
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"gametype"
@@ -1345,7 +1345,7 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%assists%"
 			"textAlignment"		"west"
-			"xpos"			"180"
+			"xpos"			"100"					// end of label + 5		  			// default: 180
 			"ypos"			"20"
 			"zpos"			"3"
 			"wide"			"35"
@@ -1362,7 +1362,7 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%destruction%"
 			"textAlignment"		"west"
-			"xpos"			"180"
+			"xpos"			"100"					// end of label + 5		  			// default: 180
 			"ypos"			"30"
 			"zpos"			"3"
 			"wide"			"35"
@@ -1379,10 +1379,10 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_CapturesLabel"
 			"textAlignment"		"east"
-			"xpos"			"200"
-			"ypos"			"0"
+			"xpos"			"110"					// start of assists + 10 			// default: 200
+			"ypos"			"20"					// default: 0
 			"zpos"			"3"
-			"wide"			"100"
+			"wide"			"50"					// default: 100
 			"tall"			"20"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1396,10 +1396,10 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_DefensesLabel"
 			"textAlignment"		"east"
-			"xpos"			"200"
-			"ypos"			"10"
+			"xpos"			"110"					// start of destruction + 10 		// default: 200
+			"ypos"			"30"					// default: 10
 			"zpos"			"3"
-			"wide"			"100"
+			"wide"			"50"					// default: 100
 			"tall"			"20"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1413,10 +1413,10 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_DominationLabel"
 			"textAlignment"		"east"
-			"xpos"			"200"
+			"xpos"			"175"					// start of capture + 10			// default: 200
 			"ypos"			"20"
 			"zpos"			"3"
-			"wide"			"100"
+			"wide"			"50"					// default: 100
 			"tall"			"20"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1430,10 +1430,10 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_RevengeLabel"
 			"textAlignment"		"east"
-			"xpos"			"200"
+			"xpos"			"175"					// start of defenses + 10			// default: 200
 			"ypos"			"30"
 			"zpos"			"3"
-			"wide"			"100"
+			"wide"			"50"					// default: 100
 			"tall"			"20"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1447,8 +1447,8 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%captures%"
 			"textAlignment"		"west"
-			"xpos"			"305"
-			"ypos"			"0"
+			"xpos"			"165"					// end of label + 5					// default: 305
+			"ypos"			"20"					// default: 0
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
@@ -1464,8 +1464,8 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%defenses%"
 			"textAlignment"		"west"
-			"xpos"			"305"
-			"ypos"			"10"
+			"xpos"			"165"					// end of label + 5					// default: 305
+			"ypos"			"30"					// default: 10
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
@@ -1481,7 +1481,7 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%dominations%"
 			"textAlignment"		"west"
-			"xpos"			"305"
+			"xpos"			"230"					// end of label + 5					// default: 305
 			"ypos"			"20"
 			"zpos"			"3"
 			"wide"			"35"
@@ -1498,7 +1498,7 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%Revenge%"
 			"textAlignment"		"west"
-			"xpos"			"305"
+			"xpos"			"230"					// end of label + 5					// default: 305
 			"ypos"			"30"
 			"zpos"			"3"
 			"wide"			"35"
@@ -1507,24 +1507,7 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-		}						
-		"HealingLabel"
-		{
-			"ControlName"		"CExLabel"
-			"fieldName"		"HealingLabel"
-			"font"			"ScoreboardVerySmall"
-			"labelText"		"#TF_ScoreBoard_HealingLabel"
-			"textAlignment"		"east"
-			"xpos"			"326"
-			"ypos"			"30"
-			"zpos"			"3"
-			"wide"			"95"
-			"tall"			"20"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-		}						
+		}												
 		"InvulnLabel"
 		{
 			"ControlName"		"CExLabel"
@@ -1532,33 +1515,16 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_InvulnLabel"
 			"textAlignment"		"east"
-			"xpos"			"326"
-			"ypos"			"0"
+			"xpos"			"240"					// start of dominations + 10			// default: 326
+			"ypos"			"20"					// default: 0
 			"zpos"			"3"
-			"wide"			"95"
+			"wide"			"50"					// default: 95
 			"tall"			"20"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-		}						
-		"TeleportsLabel"
-		{
-			"ControlName"		"CExLabel"
-			"fieldName"		"TeleportsLabel"
-			"font"			"ScoreboardVerySmall"
-			"labelText"		"#TF_ScoreBoard_TeleportsLabel"
-			"textAlignment"		"east"
-			"xpos"			"326"
-			"ypos"			"20"
-			"zpos"			"3"
-			"wide"			"95"
-			"tall"			"20"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-		}						
+		}	
 		"HeadshotsLabel"
 		{
 			"ControlName"		"CExLabel"
@@ -1566,33 +1532,50 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_HeadshotsLabel"
 			"textAlignment"		"east"
-			"xpos"			"326"
-			"ypos"			"10"
+			"xpos"			"240"					// start of revenge + 10				// default: 326
+			"ypos"			"30"					// default: 10
 			"zpos"			"3"
-			"wide"			"95"
+			"wide"			"50"					// default: 95
 			"tall"			"20"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-		}						
-		"Healing"
+		}		
+		"TeleportsLabel"
 		{
 			"ControlName"		"CExLabel"
-			"fieldName"		"Healing"
+			"fieldName"		"TeleportsLabel"
 			"font"			"ScoreboardVerySmall"
-			"labelText"		"%healing%"
-			"textAlignment"		"west"
-			"xpos"			"425"
-			"ypos"			"30"
+			"labelText"		"#TF_ScoreBoard_TeleportsLabel"
+			"textAlignment"		"east"
+			"xpos"			"305"					// start of invuln + 10					// default: 326
+			"ypos"			"20"
 			"zpos"			"3"
-			"wide"			"35"
+			"wide"			"50"					// default: 95
 			"tall"			"20"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-		}						
+		}	
+		"HealingLabel"
+		{
+			"ControlName"		"CExLabel"
+			"fieldName"		"HealingLabel"
+			"font"			"ScoreboardVerySmall"
+			"labelText"		"#TF_ScoreBoard_HealingLabel"
+			"textAlignment"		"east"
+			"xpos"			"305"					// start of headshots + 10				// default: 326
+			"ypos"			"30"
+			"zpos"			"3"
+			"wide"			"50"					// default: 95
+			"tall"			"20"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+		}		
 		"Invuln"
 		{
 			"ControlName"		"CExLabel"
@@ -1600,25 +1583,8 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%invulns%"
 			"textAlignment"		"west"
-			"xpos"			"425"
-			"ypos"			"0"
-			"zpos"			"3"
-			"wide"			"35"
-			"tall"			"20"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-		}						
-		"Teleports"
-		{
-			"ControlName"		"CExLabel"
-			"fieldName"		"Teleports"
-			"font"			"ScoreboardVerySmall"
-			"labelText"		"%teleports%"
-			"textAlignment"		"west"
-			"xpos"			"425"
-			"ypos"			"20"
+			"xpos"			"295"					// end of label + 5						// default: 425
+			"ypos"			"20"					// default: 0
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
@@ -1634,8 +1600,8 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%headshots%"
 			"textAlignment"		"west"
-			"xpos"			"425"
-			"ypos"			"10"
+			"xpos"			"295"					// end of label + 5						// default: 425
+			"ypos"			"30"					// default: 10
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
@@ -1643,7 +1609,41 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-		}						
+		}
+		"Teleports"
+		{
+			"ControlName"		"CExLabel"
+			"fieldName"		"Teleports"
+			"font"			"ScoreboardVerySmall"
+			"labelText"		"%teleports%"
+			"textAlignment"		"west"
+			"xpos"			"360"					// end of label + 5						// default: 425
+			"ypos"			"20"
+			"zpos"			"3"
+			"wide"			"35"
+			"tall"			"20"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+		}
+		"Healing"
+		{
+			"ControlName"		"CExLabel"
+			"fieldName"		"Healing"
+			"font"			"ScoreboardVerySmall"
+			"labelText"		"%healing%"
+			"textAlignment"		"west"
+			"xpos"			"360"					// end of label + 5						// default: 425
+			"ypos"			"30"
+			"zpos"			"3"
+			"wide"			"35"
+			"tall"			"20"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+		}			
 		"BackstabsLabel"
 		{
 			"ControlName"		"CExLabel"
@@ -1651,10 +1651,10 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_BackstabsLabel"
 			"textAlignment"		"east"
-			"xpos"			"445"
-			"ypos"			"0"
+			"xpos"			"370"					// start of teleports + 10				// default: 445
+			"ypos"			"20"					// default: 0
 			"zpos"			"3"
-			"wide"			"95"
+			"wide"			"50"					// default: 95
 			"tall"			"20"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1668,8 +1668,8 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%backstabs%"
 			"textAlignment"		"west"
-			"xpos"			"545"
-			"ypos"			"0"
+			"xpos"			"425"					// end of label + 5						// default: 545
+			"ypos"			"20"					// default: 0
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
@@ -1685,11 +1685,11 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_BonusLabel"
 			"textAlignment"		"east"
-			"xpos"			"445"
-			"ypos"			"10"
+			"xpos"			"370"					// start of healing + 10				// default: 445
+			"ypos"			"30"					// default: 10
 			"zpos"			"3"
 			"zpos"			"3"
-			"wide"			"95"
+			"wide"			"50"					// default: 95
 			"tall"			"20"
 			"autoResize"		"0"
 			"pinCorner"		"0"
@@ -1703,8 +1703,8 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%bonus%"
 			"textAlignment"		"west"
-			"xpos"			"545"
-			"ypos"			"10"
+			"xpos"			"425"					// end of label + 5						// default: 545
+			"ypos"			"30"					// default: 10
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
@@ -1720,10 +1720,10 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_Scoreboard_Support"
 			"textAlignment"	"east"
-			"xpos"			"445"
+			"xpos"			"435"					// start of backstabs + 10 				// default: 445
 			"ypos"			"20"
 			"zpos"			"3"
-			"wide"			"95"
+			"wide"			"50"					// default: 95
 			"tall"			"20"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1737,7 +1737,7 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%support%"
 			"textAlignment"	"west"
-			"xpos"			"545"
+			"xpos"			"490"					//end of label + 5						// default: 545
 			"ypos"			"20"
 			"zpos"			"3"
 			"wide"			"35"
@@ -1754,10 +1754,10 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_Scoreboard_Damage"
 			"textAlignment"	"east"
-			"xpos"			"445"
+			"xpos"			"435"					// start of bonus + 10 					// default: 445
 			"ypos"			"30"
 			"zpos"			"3"
-			"wide"			"95"
+			"wide"			"50"					// default: 95
 			"tall"			"20"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1771,7 +1771,7 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%damage%"
 			"textAlignment"	"west"
-			"xpos"			"545"
+			"xpos"			"490"					//end of label + 5						// default: 545
 			"ypos"			"30"
 			"zpos"			"3"
 			"wide"			"35"
