@@ -636,7 +636,7 @@
 		"labelText"		"%spectators%"
 		"textAlignment"		"west"
 		"xpos"			"115"
-		"ypos"			"357"
+		"ypos"			"360"						// default: 357
 		"zpos"			"4"
 		"wide"			"424"
 		"tall"			"20"
@@ -658,7 +658,7 @@
 		"labelText"		"%waitingtoplay%"
 		"textAlignment"		"west"
 		"xpos"			"115"
-		"ypos"			"348"
+		"ypos"			"350"						// default: 348
 		"zpos"			"4"
 		"wide"			"424"
 		"tall"			"20"
@@ -859,16 +859,16 @@
 	{
 		"ControlName"		"EditablePanel"
 		"fieldName"		"PlayerNameBG"
-		"xpos"			"105"
-		"ypos"			"372"
+		"xpos"			"115"						// default: 105
+		"ypos"			"375"						// default: 372
 		"zpos"			"-1"
-		"wide"			"485"
+		"wide"			"500"						// default: 485
 		"tall"			"29"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"border"		"TFFatLineBorder"			// default: TFThinLineBorder
+		"border"		"TFFatLineBorderOpaque"		// default: TFThinLineBorder
 		
 		if_mvm
 		{
@@ -882,8 +882,8 @@
 		"font"			"ScoreboardMedium"
 		"labelText"		"%playername%"
 		"textAlignment"		"west"
-		"xpos"			"115"
-		"ypos"			"375"						// default: 377
+		"xpos"			"125"						// default: 115
+		"ypos"			"378"						// default: 377
 		"zpos"			"3"
 		"wide"			"300"
 		"tall"			"20"
@@ -905,8 +905,8 @@
 		"font"			"ScoreboardVerySmall"
 		"labelText"		"%server%"
 		"textAlignment"		"east"
-		"xpos"			"315"
-		"ypos"			"374"						// default: 375
+		"xpos"			"340"						// default: 315
+		"ypos"			"378"						// default: 375
 		"zpos"			"3"
 		"wide"			"265"
 		"tall"			"12"
@@ -914,6 +914,7 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
+		"fgcolor"		"HudOffWhite"			// added, not in the original file
 		
 		if_mvm
 		{
@@ -927,8 +928,8 @@
 		"font"			"ScoreboardVerySmall"
 		"labelText"		"%mapname%"
 		"textAlignment"	"east"
- 		"xpos"			"315"
-		"ypos"			"384"						// default: 385
+ 		"xpos"			"340"						// default: 315
+		"ypos"			"388"						// default: 385
 		"zpos"			"3"
 		"wide"			"265"
 		"tall"			"12"
@@ -936,7 +937,7 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"fgcolor"		"236 227 203 255"
+		"fgcolor"		"HudOffWhite"			// default: 236 227 203 255
 
 		if_mvm
 		{
@@ -1203,10 +1204,10 @@
 	{
 		"ControlName"		"EditablePanel"
 		"fieldName"		"LocalPlayerStatsPanel"
-		"xpos"			"100"						// default: 0
+		"xpos"			"115"						// default: 0
 		"ypos"			"380"						// default: 395
 		"zpos"			"3"
-		"wide"			"540"						// default: 600
+		"wide"			"525"						// default: 600
 		"tall"			"448"
 		"autoResize"	"0"
 		"pinCorner"		"0"
