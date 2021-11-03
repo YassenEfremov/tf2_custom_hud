@@ -3,15 +3,15 @@
 	"scores"
 	{
 		"ControlName"		"CTFClientScoreBoardDialog"
-		"fieldName"		"scoreinfo"
-		"xpos"			"cs-0.5"
-		"ypos"			"31"
-		"wide"			"640"
-		"tall"			"480"						// default: 448
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"fieldName"			"scoreinfo"
+		"xpos"				"cs-0.5"
+		"ypos"				"31"
+		"wide"				"640"
+		"tall"				"480"						// default: 448
+		"autoResize"		"0"
+		"pinCorner"			"0"
+		"visible"			"1"
+		"enabled"			"1"
 		"tabPosition"		"0"
 		"medal_width"		"20"
 		"avatar_width"		"65"
@@ -29,15 +29,17 @@
 		"ControlName"	"EditablePanel"				// default: ImagePanel => Changed everything...
 		"fieldName"		"BlueScoreBG"
 		"xpos"			"0"
-		"ypos"			"48"						// default: 9
+		"ypos"			"63"						// default: 9
 		"zpos"			"-1"
-		"wide"			"200"						// default: 290
+		"wide"			"180"						// default: 290
 		"tall"			"24"						// default: 71
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"border"		"TFFatLineBorderBlueBGOpaque"
+		//"border"		"TFFatLineBorderBlueBGOpaque"
+		"border"		"ButtonBorder"			// "ButtonBorder" is invisible AND has ROUNDED CORNERS
+		"bgcolor_override"	"79 117 143 255"	// color may not be 100% accurate
 		
 		if_mvm
 		{
@@ -49,10 +51,10 @@
 		"ControlName"		"ImagePanel"
 		"fieldName"		"BlueTeamImage"
 		"xpos"			"8"							// default: 7
-		"ypos"			"39"						// default: 9
+		"ypos"			"53"						// default: 9
 		"zpos"			"20"
-		"wide"			"42"						// default: 60
-		"tall"			"42"						// default: 60
+		"wide"			"44"						// default: 60
+		"tall"			"44"						// default: 60
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			"../hud/team_blue"
@@ -95,16 +97,18 @@
 	{
 		"ControlName"	"EditablePanel"				// default: ImagePanel => Changed everything...
 		"fieldName"		"RedScoreBG"
-		"xpos"			"440"						// default: 354
-		"ypos"			"48"						// default: 9
+		"xpos"			"460"						// default: 354
+		"ypos"			"63"						// default: 9
 		"zpos"			"-1"
-		"wide"			"200"						// default: 290
+		"wide"			"180"						// default: 290
 		"tall"			"24"						// default: 71
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"border"		"TFFatLineBorderRedBGOpaque"
+		//"border"		"TFFatLineBorderRedBGOpaque"
+		"border"		"ButtonBorder"			// "ButtonBorder" is invisible AND has ROUNDED CORNERS
+		"bgcolor_override"	"189 59 60 255"		// color may not be 100% accurate
 
 		if_mvm
 		{
@@ -117,7 +121,7 @@
 		"fieldName"		"RedTeamImage"
 		"fieldName"		"BlueTeamImage"
 		"xpos"			"586"						// default: 571
-		"ypos"			"28"						// default: -5
+		"ypos"			"43"						// default: -5
 		"zpos"			"20"
 		"wide"			"60"						// default: 80
 		"tall"			"60"						// default: 80
@@ -164,15 +168,16 @@
 		"ControlName"		"EditablePanel"
 		"fieldName"		"MainBG"
 		"xpos"			"0"
-		"ypos"			"78"						// default: 38
+		"ypos"			"95"						// default: 38
 		"zpos"			"-1"
 		"wide"			"640"
-		"tall"			"355"						// default: 410
+		"tall"			"323"						// default: 410
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"							// default: 1
+		"visible"		"1"
 		"enabled"		"1"
-		"border"		"TFFatLineBorder"			// default: TFThinLineBorder
+		"border"		"ButtonBorder"			// default: TFThinLineBorder		// "ButtonBorder" is invisible AND has ROUNDED CORNERS
+		"bgcolor_override"	"36 33 32 204"
 		
 		if_mvm
 		{
@@ -180,7 +185,28 @@
 			"tall"			"448"
 		}
 	}
-	"MainBGBlue"				// added, replacement for MainBG
+	"MainBGShadow"	// added, not in the original file
+	{
+		"ControlName"		"EditablePanel"
+		"fieldName"		"MainBGShadow"
+		"xpos"			"0"
+		"ypos"			"78"
+		"zpos"			"-2"
+		"wide"			"640"
+		"tall"			"355"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+		"border"		"OuterShadowBorder"
+		
+		if_mvm
+		{
+			"ypos"			"0"
+			"tall"			"448"
+		}
+	}
+	"MainBGBlue"				// added, replacement for MainBG		UNUSED
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"MainBGBlue"
@@ -195,7 +221,7 @@
 		"enabled"		"1"
 		"border"		"TFFatLineBorder"
 	}
-	"MainBGRed"					// added, replacement for MainBG
+	"MainBGRed"					// added, replacement for MainBG		UNUSED
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"MainBGRed"
@@ -220,7 +246,7 @@
 		"xpos"			"80"
 		"ypos"			"21"
 		"zpos"			"20"
-		"wide"			"160"
+		"wide"			"0"		// default: 160
 		"tall"			"23"
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -238,9 +264,9 @@
 		"fieldName"		"BlueTeamScore"
 		"font"			"ScoreboardTeamScoreNew"
 		"labelText"		"%blueteamscore%"
-		"textAlignment"		"east"
-		"xpos"			"101"						// default: 175
-		"ypos"			"34" 						// default: 12
+		"textAlignment"		"center"				// default: east
+		"xpos"			"125"						// default: 175
+		"ypos"			"49" 						// default: 12
 		"zpos"			"4"
 		"wide"			"100"
 		"tall"			"55"
@@ -261,9 +287,9 @@
 		"font"			"ScoreboardTeamScoreNew"
 		"fgcolor"		"Black"
 		"labelText"		"%blueteamscore%"
-		"textAlignment"		"east"
-		"xpos"			"103"						// default: 176
-		"ypos"			"35" 						// default: 13
+		"textAlignment"		"center"				// default: east
+		"xpos"			"127"						// default: 176
+		"ypos"			"50" 						// default: 13
 		"zpos"			"3"							// default: 4
 		"wide"			"100"
 		"tall"			"55"
@@ -281,8 +307,8 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"BlueTeamScoreNumberBG"
-		"xpos"			"170"
-		"ypos"			"43"
+		"xpos"			"155"
+		"ypos"			"58"
 		"zpos"			"0"
 		"wide"			"40"
 		"tall"			"34"
@@ -291,6 +317,8 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"border"		"TFFatLineBorderBlueBGOpaque"
+		//"border"		"ButtonBorder"			// "ButtonBorder" is invisible AND has ROUNDED CORNERS
+		//"bgcolor_override"	"79 117 143 255"
 		
 		if_mvm
 		{
@@ -305,7 +333,7 @@
 		"labelText"		"%blueteamplayercount%"
 		"textAlignment"		"west"
 		"xpos"			"80"
-		"ypos"			"52"						// default: 42
+		"ypos"			"67"						// default: 42
 		"wide"			"160"
 		"tall"			"15"
 		"autoResize"		"0"
@@ -328,7 +356,7 @@
 		"xpos"			"401"
 		"ypos"			"21"
 		"zpos"			"20"
-		"wide"			"160"
+		"wide"			"0"		// default: 160
 		"tall"			"23"
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -346,9 +374,9 @@
 		"fieldName"		"RedTeamScore"
 		"font"			"ScoreboardTeamScoreNew"
 		"labelText"		"%redteamscore%"
-		"textAlignment"		"west"
-		"xpos"			"439"						// default: 368
-		"ypos"			"34" 						// default: 12
+		"textAlignment"		"center"				// default: west
+		"xpos"			"416"						// default: 368
+		"ypos"			"49" 						// default: 12
 		"zpos"			"4"
 		"wide"			"100"
 		"tall"			"55"
@@ -369,9 +397,9 @@
 		"font"			"ScoreboardTeamScoreNew"
 		"fgcolor"		"Black"
 		"labelText"		"%redteamscore%"
-		"textAlignment"		"west"
-		"xpos"			"441"						// default: 369
-		"ypos"			"35" 						// default: 13
+		"textAlignment"		"center"				// default: west
+		"xpos"			"418"						// default: 369
+		"ypos"			"50" 						// default: 13
 		"zpos"			"4"
 		"wide"			"100"
 		"tall"			"55"
@@ -389,8 +417,8 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"RedTeamScoreNumberBG"
-		"xpos"			"430"
-		"ypos"			"43"
+		"xpos"			"446"
+		"ypos"			"58"
 		"zpos"			"0"
 		"wide"			"40"
 		"tall"			"34"
@@ -413,7 +441,7 @@
 		"labelText"		"%redteamplayercount%"
 		"textAlignment"		"east"
 		"xpos"			"400"						// default: 401
-		"ypos"			"52"						// default: 42
+		"ypos"			"67"						// default: 42
 		"wide"			"160"
 		"tall"			"15"
 		"autoResize"		"0"
@@ -563,7 +591,7 @@
 		"ControlName"	"SectionedListPanel"
 		"fieldName"		"BluePlayerList"
 		"xpos"			"5"
-		"ypos"			"80"						// default: 67
+		"ypos"			"95"						// default: 67
 		"zpos"			"20"
 		"wide"			"310"
 		"tall"			"280"
@@ -573,7 +601,7 @@
 		"tabPosition"	"0"
 		"autoresize"	"3"
 		"linespacing"	"18"
-		"linegap"		"5"
+		"linegap"		"3"		// default: 5
 		"fgcolor"		"blue"
 		//"show_columns"	"1"
 		
@@ -587,7 +615,7 @@
 		"ControlName"	"SectionedListPanel"
 		"fieldName"		"RedPlayerList"
 		"xpos"			"325"
-		"ypos"			"80"						// default: 67
+		"ypos"			"95"						// default: 67
 		"zpos"			"20"
 		"wide"			"310"
 		"tall"			"280"
@@ -597,7 +625,7 @@
 		"tabPosition"	"0"
 		"autoresize"	"3"
 		"linespacing"	"18"
-		"linegap"		"5"
+		"linegap"		"3"		// default: 5
 		"fgcolor"		"red"
 		//"show_columns"	"1"
 
@@ -611,10 +639,10 @@
 		"ControlName"		"ImagePanel"
 		"fieldName"		"VerticalLine"
 		"xpos"			"p0.3745"					// default: 319
-		"ypos"			"90"						// default: 70
+		"ypos"			"105"						// default: 70
 		"zpos"			"2"
 		"wide"			"p0.001"					// default: 2
-		"tall"			"270"						// default: 292
+		"tall"			"246"						// default: 292
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"							// default: 0
@@ -636,7 +664,7 @@
 		"labelText"		"%spectators%"
 		"textAlignment"		"west"
 		"xpos"			"115"
-		"ypos"			"360"						// default: 357
+		"ypos"			"345"						// default: 357
 		"zpos"			"4"
 		"wide"			"424"
 		"tall"			"20"
@@ -656,9 +684,9 @@
 		"fieldName"		"SpectatorsInQueue"
 		"font"			"ScoreboardVerySmall"
 		"labelText"		"%waitingtoplay%"
-		"textAlignment"		"west"
-		"xpos"			"115"
-		"ypos"			"350"						// default: 348
+		"textAlignment"		"east"
+		"xpos"			"190"
+		"ypos"			"345"						// default: 348
 		"zpos"			"4"
 		"wide"			"424"
 		"tall"			"20"
@@ -677,7 +705,7 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"ShadedBar"
 		"xpos"			"5"							// default: 4
-		"ypos"			"380"						// default: 372
+		"ypos"			"365"						// default: 372
 		"zpos"			"-1"
 		"wide"			"630"						// default: 633
 		"tall"			"48"						// default: 72
@@ -686,7 +714,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"	
-		"fillcolor"		"0 0 0 179"
+		"fillcolor"		"0 0 0 153"					// defaulf: 179
 		"PaintBackgroundType"	"0"
 		
 		if_mvm
@@ -720,7 +748,7 @@
 		"fieldName"		"classmodelpanel"
 		
 		"xpos"			"0"							// default: -10
-		"ypos"			"185"
+		"ypos"			"170"
 		"zpos"			"10"		
 		"wide"			"100"						// default: 130
 		"tall"			"243"						// default: 260
@@ -860,7 +888,7 @@
 		"ControlName"		"EditablePanel"
 		"fieldName"		"PlayerNameBG"
 		"xpos"			"115"						// default: 105
-		"ypos"			"375"						// default: 372
+		"ypos"			"360"						// default: 372
 		"zpos"			"-1"
 		"wide"			"500"						// default: 485
 		"tall"			"29"
@@ -883,7 +911,7 @@
 		"labelText"		"%playername%"
 		"textAlignment"		"west"
 		"xpos"			"125"						// default: 115
-		"ypos"			"378"						// default: 377
+		"ypos"			"363"						// default: 377
 		"zpos"			"3"
 		"wide"			"300"
 		"tall"			"20"
@@ -906,7 +934,7 @@
 		"labelText"		"%server%"
 		"textAlignment"		"east"
 		"xpos"			"340"						// default: 315
-		"ypos"			"378"						// default: 375
+		"ypos"			"363"						// default: 375
 		"zpos"			"3"
 		"wide"			"265"
 		"tall"			"12"
@@ -929,7 +957,7 @@
 		"labelText"		"%mapname%"
 		"textAlignment"	"east"
  		"xpos"			"340"						// default: 315
-		"ypos"			"388"						// default: 385
+		"ypos"			"373"						// default: 385
 		"zpos"			"3"
 		"wide"			"265"
 		"tall"			"12"
@@ -1205,7 +1233,7 @@
 		"ControlName"		"EditablePanel"
 		"fieldName"		"LocalPlayerStatsPanel"
 		"xpos"			"115"						// default: 0
-		"ypos"			"380"						// default: 395
+		"ypos"			"365"						// default: 395
 		"zpos"			"3"
 		"wide"			"525"						// default: 600
 		"tall"			"448"

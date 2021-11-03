@@ -22,7 +22,7 @@
 		"ypos"			"0"
 		"tall"			"0"	[$WIN32]		// default: 84
 		"tall_minmode"	"20"	[$WIN32]
-		"tall"			"104"	[$X360]		
+		"tall"			"104"	[$X360]
 		"wide"			"f0"
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -44,7 +44,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"	
-		"fillcolor"		"46 43 42 240"
+		"fillcolor"		"36 33 32 204"
 		"PaintBackgroundType"	"0"
 		
 		if_mvm
@@ -88,7 +88,7 @@
 		"enabled"		"1"
 		"tabPosition"		"0"
 	}
-	"bottombarNew"			// added, replacement for bottombarblank
+	"bottombarNew"			// added, replacement for bottombarblank and BottomBar
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"bottombarNew"
@@ -102,7 +102,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"	
-		"fillcolor"		"46 43 42 240"
+		"fillcolor"		"36 33 32 204"
 		"PaintBackgroundType"	"0"
 		
 		if_mvm
@@ -387,9 +387,10 @@
 		"wide"			"190"
 		"tall"			"100"
 		"visible"		"0"
-		"bgcolor_override"		"255 255 255 0"
+		"bgcolor_override"		"46 43 42 255"		// default: 255 255 255 0
+		"paintBackground"    	"1"		// makes background paintable!!
 		"PaintBackgroundType"	"0"
-		"border"		"TFFatLineBorderOpaque"			// added, not in the original file
+		"border"		"ButtonBorder"		// added, not in the original file
 		
 		"model_ypos"		"10"
 		"model_center_x"	"1"

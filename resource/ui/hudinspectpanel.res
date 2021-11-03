@@ -10,9 +10,10 @@
 		"wide"			"190"
 		"tall"			"100"
 		"visible"		"0"
-		"bgcolor_override"		"255 255 255 0"
+		"bgcolor_override"		"46 43 42 255"		// default: 255 255 255 0
+		"paintBackground"    	"1"		// makes background paintable!!
 		"PaintBackgroundType"	"0"
-		"border"		"TFFatLineBorderOpaque"			// added, not in the original file
+		"border"		"ButtonBorder"		// added, not in the original file
 		
 		"model_ypos"		"10"
 		"model_center_x"	"1"

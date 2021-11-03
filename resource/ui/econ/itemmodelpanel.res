@@ -33,7 +33,6 @@
 		"image"			"animated/tf2_logo_hourglass"
 		"scaleImage"	"1"
 	}
-
 	"MainContentsContainer"
 	{
 		"ControlName"	"EditablePanel"
@@ -43,7 +42,10 @@
 		"wide"			"f0"
 		"tall"			"f0"
 		"visible"		"1"
-		"bgcolor_override"		"0 0 0 0"
+		//"proportionaltoparent"	"1"		// added, not in the original file
+		"bgcolor_override"		"46 43 42 0"	// default: 0 0 0 0
+		//"border"		"ButtonBorder"		// added, not in the original file
+
 
 		"itemmodelpanel"
 		{

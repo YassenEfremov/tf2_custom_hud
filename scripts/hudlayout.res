@@ -485,7 +485,7 @@
 		"visible" "1"
 		"enabled" "1"
 		"xpos"	 "rs1-10"	[$WIN32]			// default: r640
-		"ypos"	 "40"	[$WIN32]				// default: 18
+		"ypos"	 "41"	[$WIN32]				// default: 18
 		"xpos"	 "r672"	[$X360]
 		"ypos"	 "35"	[$X360]
 		"wide"	 "628"
@@ -972,9 +972,9 @@
 		"fieldName" 		"HudChat"
 		"visible" 		"1"
 		"enabled" 		"1"
-		"xpos"			"10"	[$WIN32]
+		"xpos"			"10"	//[$WIN32]
 		"xpos"			"42"	[$X360]
-		"ypos"			"275"
+		"ypos"			"250"	// default: 275
 		"wide"	 		"320"
 		"tall"	 		"120"
 		"PaintBackgroundType"	"2"
