@@ -896,9 +896,9 @@
 		"fieldName"				"StatPanel"
 		"visible"				"1"
 		"enabled"				"1"
-		"xpos"					"c-133"
+		"xpos"					"10"		// default: c-133
 		"xpos_lodef"			"c-190"
-		"ypos"				"270"
+		"ypos"				"25"			// default: 270
 		"ypos_lodef"			"250"
 		"wide"					"266"
 		"wide_lodef"			"400"
