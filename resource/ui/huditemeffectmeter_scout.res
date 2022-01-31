@@ -5,9 +5,9 @@
 		"fieldName"		"HudItemEffectMeter"
 		"visible"		"1"
 		"enabled"		"1"
-		"x_offset"		"50"						//default: 40
-		"xpos"			"r174"	[$WIN32]
-		"ypos"			"r62"	[$WIN32]			//default: r57
+		"x_offset"		"48"						// default: 40
+		"xpos"			"r174"	[$WIN32]			// default: r174
+		"ypos"			"r62"	[$WIN32]			// default: r57
 		"xpos_minmode"	"r52"	[$WIN32]
 		"ypos_minmode"	"r68"	[$WIN32]
 		"x_offset_minmode"		"0"	[$WIN32]
