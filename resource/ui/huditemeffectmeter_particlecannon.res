@@ -44,49 +44,49 @@
 
 //	Future design?
 
-// "box1"
-// {
-// 	"ControlName"	"EditablePanel"
-// 	"fieldName"		"box1"
-// 	"xpos"			"37"
-// 	"ypos"			"15"
-// 	"zpos"			"0"
-// 	"wide"			"45"
-// 	"tall"			"25"
-// 	"autoResize"	"0"
-// 	"pinCorner"		"0"
-// 	"visible"		"1"
-// 	"enabled"		"1"
-// 	"border"		"ButtonBorder"			// "ButtonBorder" is invisible AND has ROUNDED CORNERS
-// 	"bgcolor_override"	"189 59 60 50"	// color may not be 100% accurate
-	
-// 	if_mvm
-// 	{
-// 		"visible"		"0"
-// 	}
-// }
+	// "box1"
+	// {
+	// 	"ControlName"	"EditablePanel"
+	// 	"fieldName"		"box1"
+	// 	"xpos"			"40"
+	// 	"ypos"			"25"
+	// 	"zpos"			"0"
+	// 	"wide"			"42"
+	// 	"tall"			"23"
+	// 	"autoResize"	"0"
+	// 	"pinCorner"		"0"
+	// 	"visible"		"1"
+	// 	"enabled"		"1"
+	// 	"border"		"ButtonBorder"			// "ButtonBorder" is invisible AND has ROUNDED CORNERS
+	// 	"bgcolor_override"	"255 81 84 51"	// color may not be 100% accurate
+		
+	// 	if_mvm
+	// 	{
+	// 		"visible"		"0"
+	// 	}
+	// }
 
-// "box2"
-// {
-// 	"ControlName"	"EditablePanel"
-// 	"fieldName"		"box2"
-// 	"xpos"			"39"
-// 	"ypos"			"17"
-// 	"zpos"			"-1"
-// 	"wide"			"45"
-// 	"tall"			"25"
-// 	"autoResize"	"0"
-// 	"pinCorner"		"0"
-// 	"visible"		"1"
-// 	"enabled"		"1"
-// 	"border"		"ButtonBorder"			// "ButtonBorder" is invisible AND has ROUNDED CORNERS
-// 	"bgcolor_override"	"89 27 27 180"	// color may not be 100% accurate
-	
-// 	if_mvm
-// 	{
-// 		"visible"		"0"
-// 	}
-// }
+	// "box2"
+	// {
+	// 	"ControlName"	"EditablePanel"
+	// 	"fieldName"		"box2"
+	// 	"xpos"			"42"
+	// 	"ypos"			"27"
+	// 	"zpos"			"-1"
+	// 	"wide"			"42"
+	// 	"tall"			"23"
+	// 	"autoResize"	"0"
+	// 	"pinCorner"		"0"
+	// 	"visible"		"1"
+	// 	"enabled"		"1"
+	// 	"border"		"ButtonBorder"			// "ButtonBorder" is invisible AND has ROUNDED CORNERS
+	// 	"bgcolor_override"	"94 30 31 204"	// color may not be 100% accurate
+		
+	// 	if_mvm
+	// 	{
+	// 		"visible"		"0"
+	// 	}
+	// }
 
 	"ItemEffectMeterLabel"
 	{

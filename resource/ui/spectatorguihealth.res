@@ -4,14 +4,14 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusHealthImage"
-		"xpos"			"p0.0046"				// default: 6
+		"xpos"			"s0.12"					// default: 6
 		"xpos_minmode"	"7"
-		"ypos"			"4"						// default: 6
+		"ypos"			"s0.12"					// default: 6
 		"ypos_minmode"	"7"
 		"zpos"			"4"
-		"wide"			"24"					// default: 20
+		"wide"			"26"					// default: 20
 		"wide_minmode"	"14"
-		"tall"			"24"					// default: 20
+		"tall"			"26"					// default: 20
 		"tall_minmode"	"14"
 		"visible"		"1"
 		"enabled"		"1"
@@ -21,14 +21,14 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusHealthImageBG"
-		"xpos"			"2"						// default: 4
+		"xpos"			"s0.05"					// default: 4
 		"xpos_minmode"	"6"
-		"ypos"			"2"						// default: 4
+		"ypos"			"s0.05"					// default: 4
 		"ypos_minmode"	"6"
 		"zpos"			"3"
-		"wide"			"28"					// default: 24
+		"wide"			"29"					// default: 24
 		"wide_minmode"	"16"
-		"tall"			"28"					// default: 24
+		"tall"			"29"					// default: 24
 		"tall_minmode"	"16"
 		"visible"		"1"
 		"enabled"		"1"
@@ -77,7 +77,7 @@
 		"fieldName"		"PlayerStatusHealthValue"
 		"xpos"			"6"
 		"xpos_minmode"	"7"
-		"ypos"			"11"
+		"ypos"			"s1.05"					// default: 11
 		"ypos_minmode"	"7"
 		"zpos"			"5"
 		"wide"			"20"
@@ -88,8 +88,28 @@
 		"enabled"		"1"
 		"labelText"		"%Health%"
 		"textAlignment"	"center"	
-		"font"			"HudFontSmallestBold"	//default: SpectatorVerySmall
-		"fgcolor"		"TanDark"
+		"font"			"HudFontSmallestBold"	// default: SpectatorVerySmall
+		"fgcolor"		"HUDSpectator"			// default: TanDark
+	}
+	"PlayerStatusHealthValueShadow"			// Added, not in the original file
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"PlayerStatusHealthValueShadow"
+		"xpos"			"7"						// default: 6
+		"xpos_minmode"	"7"
+		"ypos"			"s1.12"					// default: 11
+		"ypos_minmode"	"7"
+		"zpos"			"5"
+		"wide"			"20"
+		"wide_minmode"	"14"
+		"tall"			"10"
+		"tall_minmode"	"14"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"%Health%"
+		"textAlignment"	"center"
+		"font"			"HudFontSmallestBold"
+		"fgcolor"		"Black"
 	}
 	"PlayerStatusPlayerLevel"
 	{
@@ -103,7 +123,7 @@
 		"tall"			"12"
 		"visible"		"0"
 		"enabled"		"1"
-		"textAlignment"	"center"	
+		"textAlignment"	"center"
 		"font"			"ScoreboardVerySmall"
 		"fgcolor"		"TFOrange"
 	}							

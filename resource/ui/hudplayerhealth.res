@@ -89,7 +89,7 @@
 		"font"			"HudFontMediumBold"
 		"fgcolor"		"HUDSpectator"
 	}
-	"PlayerStatusHealthValueShadow"			// added, not in the original file
+	"PlayerStatusHealthValueShadow"			// Added, not in the original file
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusHealthValueShadow"

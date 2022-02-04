@@ -257,7 +257,7 @@
 		"ControlName"	"CPvPRankPanel"
 		"fieldName"		"RankModelPanel"
 		"xpos"			"cs-0.5-256"
-		"ypos"			"cs-0.5-120"
+		"ypos"			"cs-0.5-117"				// default: cs-0.5-120
 
 		"zpos"			"-51"
 		"wide"			"1000"
@@ -407,11 +407,29 @@
 		"xpos"			"c-290"
 		"ypos"			"94"
 		"zpos"			"-100"
-		"wide"			"260"
-		"tall"			"60"
+		"wide"			"258"						// default: 260
+		"tall"			"58"						// default: 60
 		"visible"		"1"
 		"PaintBackgroundType"	"2"
-		"border"		"MainMenuBGBorder"
+		"paintBackground"    	"1"					// makes background paintable!!
+		"bgcolor_override"		"71 67 65 153"
+		"border"		"ButtonBorder"
+		"proportionaltoparent"	"1"
+	}
+	"RankBorderShadow"	// Added, not in the original file
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"RankBorderShadow"
+		"xpos"			"c-288"
+		"ypos"			"s1.654"	// this was supposed to be 94+2 but for some reason it didn't look the same
+		"zpos"			"-101"
+		"wide"			"258"
+		"tall"			"58"
+		"visible"		"1"
+		"PaintBackgroundType"	"2"
+		"paintBackground"    	"1"					// makes background paintable!!
+		"bgcolor_override"		"Black"
+		"border"		"ButtonBorder"
 		"proportionaltoparent"	"1"
 	}
 	
@@ -1383,7 +1401,41 @@
 		"tall"			"150"
 		"visible"		"1"
 
-		"border"		"MainMenuBGBorder"
+		"border"		"ButtonBorder"		// default: MainMenuBGBorder
+
+
+		"BackgroundBorder"	// Added, not in the original file
+		{
+			"ControlName"	"EditablePanel"
+			"fieldName"		"BackgroundBorder"
+			"xpos"			"0"
+			"ypos"			"0"
+			"zpos"			"0"
+			"wide"			"258"
+			"tall"			"148"
+			"visible"		"1"
+			"PaintBackgroundType"	"2"
+			"paintBackground"    	"1"					// makes background paintable!!
+			"bgcolor_override"		"71 67 65 153"
+			"border"		"ButtonBorder"
+			"proportionaltoparent"	"1"
+		}
+		"BackgroundBorderShadow"	// Added, not in the original file
+		{
+			"ControlName"	"EditablePanel"
+			"fieldName"		"BackgroundBorderShadow"
+			"xpos"			"2"
+			"ypos"			"2"
+			"zpos"			"-101"
+			"wide"			"258"
+			"tall"			"148"
+			"visible"		"1"
+			"PaintBackgroundType"	"2"
+			"paintBackground"    	"1"					// makes background paintable!!
+			"bgcolor_override"		"Black"
+			"border"		"ButtonBorder"
+			"proportionaltoparent"	"1"
+		}
 
 		"TitleLabel"
 		{
@@ -1408,10 +1460,10 @@
 		{
 			"ControlName"	"EditablePanel"
 			"fieldname"		"InnerShadow"
-			"xpos"			"cs-0.5"
+			"xpos"			"6"							// default: cs-0.5
 			"ypos"			"rs1-10"
 			"zpos"			"501"
-			"wide"			"f10"
+			"wide"			"f12"						// default: f10
 			"tall"			"110"
 			"visible"		"1"	
 			"PaintBackgroundType"	"0"
@@ -1419,17 +1471,17 @@
 			"mouseinputenabled"	"0"
 
 			"paintborder"	"1"
-			"border"		"InnerShadowBorder"
+			"border"		"InnerShadowBorderThin"			// default: InnerShadowBorder
 		}
 
 		"SteamFriendsList"
 		{
 			"ControlName"	"CSteamFriendsListPanel"
 			"fieldname"		"SteamFriendsList"
-			"xpos"			"cs-0.5"
+			"xpos"			"6"							// default: cs-0.5
 			"ypos"			"rs1-10"
 			"zpos"			"500"
-			"wide"			"f10"
+			"wide"			"f12"						// default: f10
 			"tall"			"110"
 			"visible"		"1"
 			"proportionaltoparent"	"1"
@@ -1484,17 +1536,18 @@
 		{
 			"ControlName"	"EditablePanel"
 			"fieldname"		"BelowDarken"
-			"xpos"			"cs-0.5"
+			"xpos"			"6"					// default: cs-0.5
 			"ypos"			"rs1-10"
-			"zpos"			"499"
-			"wide"			"f10"
+			"zpos"			"498"
+			"wide"			"f12"				// default: f10
 			"tall"			"110"
 			"visible"		"1"	
 			"PaintBackgroundType"	"0"
 			"proportionaltoparent"	"1"
 			"mouseinputenabled"	"0"
 
-			"bgcolor_override"	"0 0 0 100"
+			"bgcolor_override"	"Black" 		// default: 0 0 0 100
+			//"border"		"CrosshatchedBackground"	// Added, not in the original file
 		}
 	}
 
@@ -1516,15 +1569,48 @@
 			"xpos"			"0"
 			"ypos"			"0"
 			"zpos"			"0"
-			"wide"			"260"
-//			"tall"			"120"
+			"wide"			"260"				// default: 260
+//			"tall"			"120"		why commented out?
 			"tall"			"96"
 			"visible"		"1"
 			"PaintBackgroundType"	"0"
 			"proportionaltoparent"	"1"
 
 			"paintborder"	"1"
-			"border"		"MainMenuBGBorder"
+			"border"		"ButtonBorder"		// default: MainMenuBGBorder
+
+			"BackgroundBorder"	// Added, not in the original file
+			{
+				"ControlName"	"EditablePanel"
+				"fieldName"		"BackgroundBorder"
+				"xpos"			"0"
+				"ypos"			"0"
+				"zpos"			"0"
+				"wide"			"258"
+				"tall"			"93"
+				"visible"		"1"
+				"PaintBackgroundType"	"2"
+				"paintBackground"    	"1"					// makes background paintable!!
+				"bgcolor_override"		"71 67 65 153"
+				"border"		"ButtonBorder"
+				"proportionaltoparent"	"1"
+			}
+			"BackgroundBorderShadow"	// Added, not in the original file
+			{
+				"ControlName"	"EditablePanel"
+				"fieldName"		"BackgroundBorderShadow"
+				"xpos"			"2"
+				"ypos"			"2"
+				"zpos"			"-101"
+				"wide"			"258"
+				"tall"			"93"
+				"visible"		"1"
+				"PaintBackgroundType"	"2"
+				"paintBackground"    	"1"					// makes background paintable!!
+				"bgcolor_override"		"Black"
+				"border"		"ButtonBorder"
+				"proportionaltoparent"	"1"
+			}
 
 			"TitleLabel"
 			{
@@ -1689,11 +1775,11 @@
 			{
 				"ControlName"			"CCyclingAdContainerPanel"
 				"fieldName"				"CyclingAd"
-				"xpos"					"5"
+				"xpos"					"6"				// default: 5
 //				"ypos"					"p0.47"
 				"ypos"					"27"
 				"zpos"					"100"
-				"wide"					"f10"
+				"wide"					"f12"			// default: f10
 //				"tall"					"p0.5"
 				"tall"					"60"
 				"visible"				"1"
@@ -2280,18 +2366,19 @@
 		}
 	}
 	
-	"BackgroundFooter"
+	"BackgroundFooter"	// Everything here is offset by 2px so that the border isn't visible!
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"BackgroundFooter"
-		"xpos"			"0"
-		"ypos"			"420"
-		"zpos"			"-50"
-		"wide"			"f0"
-		"tall"			"60"
-		"visible"		"1"
+		"xpos"			"-2" // real: 0
+		"ypos"			"430"					// default: 420
+		"zpos"			"-80"					// default: -50
+		"wide"			"f-4"					// default: f0
+		"tall"			"52" // real: 50		// default: 60
+		"visible"		"1"						// default: 1
 		"enabled"		"1"
-		"image"			"loadout_bottom_gradient"
+		//"image"			"loadout_bottom_gradient"
+		"border"		"ReplayDefaultBorder"	// Added, not in the original file
 		"tileImage"		"1"
 	}				
 	"FooterLine"
@@ -2303,18 +2390,33 @@
 		"zpos"			"-5-"
 		"wide"			"f0"
 		"tall"			"10"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"					// default: 1
+		"enabled"		"0"					// default: 1
 		"image"			"loadout_solid_line"
 		"scaleImage"	"1"
-	}	
+	}
+	// "FooterShadow"		// Everything here is offset by 10px so that the border isn't visible!
+	// // Added, not in the original file
+	// {
+	// 	"ControlName"	"EditablePanel"
+	// 	"fieldName"		"FooterShadow"
+	// 	"xpos"			"-10"
+	// 	"ypos"			"r55"
+	// 	"zpos"			"-2"
+	// 	"wide"			"f-20"
+	// 	"tall"			"70"
+	// 	"visible"		"1"
+	// 	"PaintBackgroundType"	"2"
+	// 	"border"		"OuterShadowBorder"
+	// 	"proportionaltoparent"	"1"
+	// }
 
 	"CharacterSetupButton"
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"CharacterSetupButton"
 		"xpos"			"c-288"
-		"ypos"			"rs1-18"
+		"ypos"			"rs1-12"			// default: rs1-18
 		"wide"			"100"
 		"tall"			"26"
 		"autoResize"	"0"
@@ -2375,7 +2477,7 @@
 		"ControlName"	"CExImageButton"
 		"fieldName"		"GeneralStoreButton"
 		"xpos"			"c-165"
-		"ypos"			"rs1-18"
+		"ypos"			"rs1-12"			// default: rs1-18
 		"wide"			"100"
 		"tall"			"26"
 		"autoResize"	"0"
@@ -2915,5 +3017,11 @@
 			"angles_y"		"130"
 			"angles_z"		"0"
 		}
+	}
+
+	"DashboardDimmer"		// Added, not in the original file
+	{
+		//"wide" "0"
+		"tall" "f50"
 	}
 }
