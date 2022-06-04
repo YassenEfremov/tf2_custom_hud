@@ -1,0 +1,20 @@
+// fixes lag issue regarding DamagedPlayer
+// put things in AnimateHitmarker instead
+
+event DamagedPlayer
+{
+    StopEvent AnimateHitmarker 0.0
+    RunEvent AnimateHitmarker 0.0
+}
+
+
+// This prevents the chat from changing its position randomly!
+
+event CompetitiveGame_LowerChatWindow { }
+event CompetitiveGame_RestoreChatWindow { }
+event HudTournament_MoveChatWindow { }
+
+event AnimateHitmarker
+{
+
+}

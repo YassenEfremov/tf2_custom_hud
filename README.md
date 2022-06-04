@@ -26,3 +26,10 @@ I decided to change some things that i really didn't like about TF2's default hu
   - 🔼 End of game screen
   - 🔼 Advanced options
   - 🔼 Inspect panels
+
+
+## Credits
+
+Resources used while developing this HUD:
+- [JarateKing/BaseHud](https://github.com/JarateKing/BaseHud)
+- [JarateKing/TF2-Hud-Reference](https://github.com/JarateKing/TF2-Hud-Reference)

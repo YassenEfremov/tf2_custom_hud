@@ -1,20 +1,39 @@
-// Load the base configuration
+// load the base configuration
 //exec default.cfg
 r_decal_cullsize 1
 
 // Setup custom controller
 exec joystick.cfg
 
-// Run a user script file if present
-exec autoexec.cfg
 
-// Stuff command line statements
-stuffcmds
+// ----------------------------------------------
+// 					CUSTOM STUFF
+// ----------------------------------------------
 
-// Display the startup level
-startupmenu
-sv_unlockedchapters 99
+// execute the hud settings
+exec hud_always.cfg
+
+// manage the firstrun file
+alias chud_firstrun "exec hud_firstrun"
+exec hud_has_run.txt
+chud_firstrun
+
+// update the whole hud to change the dimmer's position
+wait 5; showconsole; toggle mat_antialias 0 1; hideconsole;
 
 // Apply HUD settings
 cl_hud_minmode 0
 vgui_cache_res_files 0
+
+// ----------------------------------------------
+
+
+// run a user script file if present
+exec autoexec.cfg
+
+// stuff command line statements
+stuffcmds
+
+// display the startup level
+startupmenu
+sv_unlockedchapters 99
